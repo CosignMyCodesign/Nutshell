@@ -1,0 +1,75 @@
+:root {
+  --rich-red: #69140E;
+  --darkest-red: #2B0504;
+  --brownish-orange: #874000;
+  --lightest-orange: #BC5F04;
+  --longhorn-orange: #A44200;
+}
+
+.container {
+    display: grid;
+}
+
+.form_output {
+    border: 1px blue solid;
+}
+
+.form_input {
+    border: 1px red solid;
+}
+
+#navBar {
+
+}
+
+#navBar_links {
+
+}
+
+#messages_container {
+
+}
+
+#messages_output {
+
+}
+
+#messages_form {
+
+}
+
+#tasks_container {
+
+}
+
+#tasks_output {
+
+}
+
+#tasks_form {
+
+}
+
+#events_container {
+
+}
+
+#events_output {
+  
+}
+
+#events_form {
+
+}
+
+#news_container {
+
+}
+
+#news_output {
+
+}
+
+#news_form {
+   
+}
