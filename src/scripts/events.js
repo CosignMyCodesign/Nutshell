@@ -1,1 +1,1 @@
-// In charge of the events page
+// In charge of displaying the events page
