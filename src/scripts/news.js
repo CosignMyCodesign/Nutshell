@@ -1,5 +1,5 @@
 // In charge of the news page
-// title, synopsis, url
+// title, date, synopsis, url
 // save article(post)
 
 import ElementBuilder from "./elementBuilder"
