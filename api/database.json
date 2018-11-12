@@ -1,44 +1,44 @@
 {
-    "user": [
-      {
-        "username": "rollzac",
-        "email": "zac@nicksaban.com",
-        "password": "iluvsaban123",
-        "id": 1
-      },
-      {
-        "username": "kazathur92",
-        "email": "gabmin21@hotmail.com",
-        "password": "woopy",
-        "id": 2
-      }
-    ],
-    "messages": [
-        {
-          "message": "iron bowl ez win",
-          "userId": 1,
-          "id": 1
-        },
-        {
-          "message": "i love food",
-          "userId": 2,
-          "id": 2
-        }
-      ],
-      "news": [
-        {
-          "title": "Mobile seafood vendor: ‘Our whole area is just being destroyed’",
-          "synopsis": "Oh yeah, I'm going to have porpoises out there, manatees, he says, imagining a future where even environmentalists will be lining up to buy endangered species by the pound.",
-          "url": "https://www.al.com/news/2018/11/mobile-seafood-vendor-our-whole-area-is-just-being-destroyed.html",
-          "userId": 1,
-          "id": 1
-        }
-      ],
-      "tasks": [
-        {
-          "task": "hate auburn",
-          "userId": "1",
-          "id": 1
-        }
-      ]
-  }
+  "user": [
+    {
+      "username": "rollzac",
+      "email": "zac@nicksaban.com",
+      "password": "iluvsaban123",
+      "id": 1
+    },
+    {
+      "username": "kazathur92",
+      "email": "gabmin21@hotmail.com",
+      "password": "woopy",
+      "id": 2
+    }
+  ],
+  "messages": [
+    {
+      "message": "iron bowl ez win",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "message": "i love food",
+      "userId": 2,
+      "id": 2
+    }
+  ],
+  "news": [
+    {
+      "title": "Midterm fury fuels Trump's assault on constitutional norms",
+      "url": "https://www.cnn.com/2018/11/12/politics/trump-midterms-reaction-constitution/index.html",
+      "synopsis": "President Donald Trump is intensifying his challenge to constitutional constraints and governing norms that are already facing their gravest test since Watergate in the 1970s.",
+      "date": "11/12/2018",
+      "id": 3
+    }
+  ],
+  "tasks": [
+    {
+      "task": "hate auburn",
+      "userId": "1",
+      "id": 1
+    }
+  ]
+}
