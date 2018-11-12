@@ -7,11 +7,10 @@ import ElementBuilder from "./elementBuilder"
 import APICollection from "./apiCollection"
 
 export default class Events {
-  constructor(name, date, location, url, userId, id) {
+  constructor(name, date, location, userId, id) {
     this.name = name,
     this.date = date,
     this.location = location,
-    this.url = url,
     this.userId = userId,
     this.id = id
   }
@@ -48,16 +47,6 @@ export default class Events {
     }
     let paragraphDefinition2 = {
       "element_type": "p",
-      "text_content": `${this.url}`,
-      "attribute_descriptions": [
-          {
-              "attribute_name": "class",
-              "attribute_value": "url"
-          }
-      ]
-    }
-    let paragraphDefinition3 = {
-      "element_type": "p",
       "text_content": `Location: ${this.location}`,
       "attribute_descriptions": [
           {
@@ -91,16 +80,24 @@ export default class Events {
     let eventsHeader = ElementBuilder.buildHTMLElement(header3Definition.element_type, header3Definition.attribute_descriptions, header3Definition.text_content)
     let eventsParagraph = ElementBuilder.buildHTMLElement(paragraphDefinition.element_type, paragraphDefinition.attribute_descriptions, paragraphDefinition.text_content)
     let eventsParagraph2 = ElementBuilder.buildHTMLElement(paragraphDefinition2.element_type, paragraphDefinition2.attribute_descriptions, paragraphDefinition2.text_content)
-    let eventsParagraph3 = ElementBuilder.buildHTMLElement(paragraphDefinition3.element_type, paragraphDefinition3.attribute_descriptions, paragraphDefinition3.text_content)
     let updateButton = ElementBuilder.buildHTMLElement(updateButtonDefinition.element_type, updateButtonDefinition.attributes_descriptions, updateButtonDefinition.text_content)
     let deleteButton = ElementBuilder.buildHTMLElement(deleteButtonDefinition.element_type, deleteButtonDefinition.attributes_descriptions, deleteButtonDefinition.text_content)
 
     eventsDiv.appendChild(eventsHeader)
     eventsDiv.appendChild(eventsParagraph)
     eventsDiv.appendChild(eventsParagraph2)
-    eventsDiv.appendChild(eventsParagraph3)
     eventsDiv.appendChild(updateButton)
     eventsDiv.appendChild(deleteButton)
+
+// add update function to button
+
+    
+
+    deleteButton.addEventListener("click", () => {
+      APICollection.deleteAPI(`http://localhost:8088/events/${this.id}`).then(
+          window.location.reload("http://localhost:8080")
+      )
+  })
 
     return eventsDiv
   }

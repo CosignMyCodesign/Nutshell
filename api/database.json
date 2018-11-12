@@ -27,17 +27,26 @@
   ],
   "news": [
     {
-      "title": "Midterm fury fuels Trump's assault on constitutional norms",
-      "url": "https://www.cnn.com/2018/11/12/politics/trump-midterms-reaction-constitution/index.html",
-      "synopsis": "President Donald Trump is intensifying his challenge to constitutional constraints and governing norms that are already facing their gravest test since Watergate in the 1970s.",
+      "title": "Robby",
+      "url": "http://robbyhecht.com",
+      "synopsis": "So great",
       "date": "11/12/2018",
-      "id": 3
+      "id": 1
     }
   ],
   "tasks": [
     {
       "task": "hate auburn",
       "userId": "1",
+      "id": 1
+    }
+  ],
+  "events": [
+    {
+      "name": "best event ever",
+      "date": "11/20/18",
+      "location": "Dad's house",
+      "userId": 1,
       "id": 1
     }
   ]
