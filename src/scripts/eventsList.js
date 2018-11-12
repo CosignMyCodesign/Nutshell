@@ -35,7 +35,7 @@ export default class NewsList {
 
     APICollection.getAPI("http://localhost:8088/events").then((events) => {
       events.forEach((event) => {
-          let currentEvent = new Events(event.name, event.date, event.location, event.userId, event.id)
+          let currentEvent = new Events(event.name, event.date, event.time, event.location, event.userId, event.id)
           let currentEventDisplay = currentEvent.buildEventsDisplay()
 
           let listed_event = ElementBuilder.buildHTMLElement(listDefinition.element_type, listDefinition.attributes_descriptions)

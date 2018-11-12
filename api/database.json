@@ -43,11 +43,18 @@
   ],
   "events": [
     {
-      "name": "best event ever",
-      "date": "11/20/18",
-      "location": "Dad's house",
-      "userId": 1,
-      "id": 1
+      "name": "recre",
+      "date": "2018-11-14",
+      "time": "04:05",
+      "location": "the basement",
+      "id": 2
+    },
+    {
+      "name": "the boss",
+      "date": "2018-11-06",
+      "time": "03:01",
+      "location": "fvrbvr",
+      "id": 3
     }
   ]
 }
