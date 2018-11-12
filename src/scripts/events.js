@@ -16,6 +16,8 @@ export default class Events {
     this.id = id
   }
 
+  // create the Events elements and attributes and place into variables
+
   buildEventsDisplay() {
     let divDefinition = {
       "element_type": "div",
@@ -87,6 +89,8 @@ export default class Events {
       ]
     }
 
+    // send into the element builder to create html and assign to variables
+
     let eventsDiv = ElementBuilder.buildHTMLElement(divDefinition.element_type, divDefinition.attribute_descriptions)
     let eventsHeader = ElementBuilder.buildHTMLElement(header3Definition.element_type, header3Definition.attribute_descriptions, header3Definition.text_content)
     let eventsParagraph = ElementBuilder.buildHTMLElement(paragraphDefinition.element_type, paragraphDefinition.attribute_descriptions, paragraphDefinition.text_content)
@@ -96,6 +100,8 @@ export default class Events {
     let updateButton = ElementBuilder.buildHTMLElement(updateButtonDefinition.element_type, updateButtonDefinition.attributes_descriptions, updateButtonDefinition.text_content)
     let deleteButton = ElementBuilder.buildHTMLElement(deleteButtonDefinition.element_type, deleteButtonDefinition.attributes_descriptions, deleteButtonDefinition.text_content)
 
+    // chain it all together
+
     eventsDiv.appendChild(eventsHeader)
     eventsDiv.appendChild(eventsParagraph)
     eventsDiv.appendChild(eventsParagraph2)
@@ -103,7 +109,9 @@ export default class Events {
     eventsDiv.appendChild(updateButton)
     eventsDiv.appendChild(deleteButton)
 
-// add update function to button
+    // STILL NEED TO ADD AN EVENT LISTENENER TO THE UPDATE BUTTON
+
+  // add delete function to button
 
     deleteButton.addEventListener("click", () => {
       APICollection.deleteAPI(`http://localhost:8088/events/${this.id}`).then(

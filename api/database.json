@@ -27,10 +27,10 @@
   ],
   "news": [
     {
-      "title": "Robby",
+      "title": "It Happened",
       "url": "http://robbyhecht.com",
-      "synopsis": "So great",
-      "date": "11/12/2018",
+      "synopsis": "WTF, Wow",
+      "date": "11/13/2018",
       "id": 1
     }
   ],
@@ -43,18 +43,11 @@
   ],
   "events": [
     {
-      "name": "recre",
-      "date": "2018-11-14",
-      "time": "04:05",
-      "location": "the basement",
-      "id": 2
-    },
-    {
-      "name": "the boss",
-      "date": "2018-11-06",
-      "time": "03:01",
-      "location": "fvrbvr",
-      "id": 3
+      "name": "Color Me Badd",
+      "date": "2018-12-04",
+      "time": "01:00",
+      "location": "Bongo Java After Hours Theater",
+      "id": 1
     }
   ]
 }
