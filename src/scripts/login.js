@@ -25,6 +25,9 @@ retrieveBtn.addEventListener("click", e => {
     console.log("current user is", sessionStorage.getItem("username"))
 })
 
+// declare variable to hold result from checking
+let testResult;
+
 
 export default class LoginCollection {
     static verifyUser(array, un, pw) {
@@ -55,21 +58,22 @@ export default class LoginCollection {
     static verifyUser3 (array, un, pw) {
         for(let i=0; i < array.length; i++) {
             if (array[i].username.indexOf(un) > -1 ) {
-                console.log(`${un} is in the database`)
                 // now check password
                 if (array[i].password.indexOf(pw) > -1) {
-                    console.log("you are in!")
                     // log in
                     saveUser(username.value, password.value)
                     // save user to session storage, hide login div, show everything else
+                    testResult = "You are logged in!"
                     break
                 } else {
-                    console.log("your password does not match")
-                    // if pass does not match, tell user their PW is wrong
+                    testResult = "Your password does not match. Please try again."
+                    break
                 }
             } else {
-                console.log("No username found. Please register a new account.")
+                testResult = "No username found. Please register a new account.";
             }
-        }
+        } 
+        // tell the user the result of the test
+        console.log(testResult)
     }
 }
