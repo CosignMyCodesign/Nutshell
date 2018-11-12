@@ -37,7 +37,7 @@ export default class News {
         }
         let paragraphDefinition = {
             "element_type": "p",
-            "text_content": `${this.date}`,
+            "text_content": `Date Added: ${this.date}`,
             "attribute_descriptions": [
                 {
                     "attribute_name": "class",
@@ -45,16 +45,17 @@ export default class News {
                 }
             ]
         }
-        let paragraphDefinition2 = {
-            "element_type": "p",
-            "text_content": `${this.url}`,
+        let anchorDefinition = {
+            "element_type": "a",
+            "text_content": "Link to Article",
             "attribute_descriptions": [
                 {
-                    "attribute_name": "class",
-                    "attribute_value": "url"
+                    "attribute_name": "href",
+                    "attribute_value": `${this.url}`
                 }
             ]
         }
+
         let paragraphDefinition3 = {
             "element_type": "p",
             "text_content": `Synopsis: ${this.synopsis}`,
@@ -65,16 +66,16 @@ export default class News {
                 }
             ]
         }
-        let updateButtonDefinition = {
-            "element_type": "button",
-            "text_content": "Edit This Article",
-            "attributes_descriptions": [
-                {
-                    "attribute_name": "class",
-                    "attribute_value": "btn update_article"
-                }
-            ]
-        }
+        // let updateButtonDefinition = {
+        //     "element_type": "button",
+        //     "text_content": "Edit This Article",
+        //     "attributes_descriptions": [
+        //         {
+        //             "attribute_name": "class",
+        //             "attribute_value": "btn update_article"
+        //         }
+        //     ]
+        // }
         let deleteButtonDefinition = {
             "element_type": "button",
             "text_content": "Delete This Article",
@@ -89,17 +90,21 @@ export default class News {
         let newsDiv = ElementBuilder.buildHTMLElement(divDefinition.element_type, divDefinition.attribute_descriptions)
         let newsHeader = ElementBuilder.buildHTMLElement(header3Definition.element_type, header3Definition.attribute_descriptions, header3Definition.text_content)
         let newsParagraph = ElementBuilder.buildHTMLElement(paragraphDefinition.element_type, paragraphDefinition.attribute_descriptions, paragraphDefinition.text_content)
-        let newsParagraph2 = ElementBuilder.buildHTMLElement(paragraphDefinition2.element_type, paragraphDefinition2.attribute_descriptions, paragraphDefinition2.text_content)
+        let newsParagraph2 = ElementBuilder.buildHTMLElement(anchorDefinition.element_type, anchorDefinition.attribute_descriptions, anchorDefinition.text_content)
         let newsParagraph3 = ElementBuilder.buildHTMLElement(paragraphDefinition3.element_type, paragraphDefinition3.attribute_descriptions, paragraphDefinition3.text_content)
-        let updateButton = ElementBuilder.buildHTMLElement(updateButtonDefinition.element_type, updateButtonDefinition.attributes_descriptions, updateButtonDefinition.text_content)
         let deleteButton = ElementBuilder.buildHTMLElement(deleteButtonDefinition.element_type, deleteButtonDefinition.attributes_descriptions, deleteButtonDefinition.text_content)
 
         newsDiv.appendChild(newsHeader)
         newsDiv.appendChild(newsParagraph)
         newsDiv.appendChild(newsParagraph2)
         newsDiv.appendChild(newsParagraph3)
-        newsDiv.appendChild(updateButton)
         newsDiv.appendChild(deleteButton)
+
+        deleteButton.addEventListener("click", () => {
+            APICollection.deleteAPI(`http://localhost:8088/news/${this.id}`).then(
+                window.location.reload("http://localhost:8080")
+            )
+        })
 
         return newsDiv
     }
