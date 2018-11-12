@@ -6,6 +6,7 @@ import APICollection from "./apiCollection"
 const saveUser = (username, password) => {
     sessionStorage.setItem("username", username);
     sessionStorage.setItem("password", password);
+    console.log("user saved to session storage")
 }
 
 // adding EL and logic to save button
@@ -13,8 +14,9 @@ const saveBtn = document.getElementById("submit-login");
 saveBtn.addEventListener("click", e => {
     const username = document.getElementById("username").value
     const password = document.getElementById("password").value
-    saveUser(username, password)
-    console.log("user saved to session storage")
+    APICollection.fetchUsers().then(returned => {
+        LoginCollection.verifyUser3(returned, username, password)
+    })
 })
 
 // gets current session storage and logs to console
@@ -30,16 +32,17 @@ export default class LoginCollection {
             if (element.username.indexOf(un) > -1 ) {
                 console.log(`${un} is in the database`)
                 // now check password
-                // how to exit loop when this happens?
                 if (element.password.indexOf(pw) > -1) {
                     console.log("you are in!")
+                    // log in
+                    saveUser(username.value, password.value)
+                    // save user to session storage, hide login div, show everything else
                 } else {
                     console.log("your password does not match")
+                    // if pass does not match, tell user their PW is wrong
                 }
-                // if pass matches, log in, hide login div and show everything else
-                // if pass does not match, tell user their PW is wrong
             }
-                // if no match, alert user to register
+            console.log("No username match found. Please register a new account.")
         });
     }
     static verifyUser2 (array, un) {
@@ -48,5 +51,25 @@ export default class LoginCollection {
             console.log("no match yet...")
             return value.username === un;
         });
+    }
+    static verifyUser3 (array, un, pw) {
+        for(let i=0; i < array.length; i++) {
+            if (array[i].username.indexOf(un) > -1 ) {
+                console.log(`${un} is in the database`)
+                // now check password
+                if (array[i].password.indexOf(pw) > -1) {
+                    console.log("you are in!")
+                    // log in
+                    saveUser(username.value, password.value)
+                    // save user to session storage, hide login div, show everything else
+                    break
+                } else {
+                    console.log("your password does not match")
+                    // if pass does not match, tell user their PW is wrong
+                }
+            } else {
+                console.log("No username found. Please register a new account.")
+            }
+        }
     }
 }
