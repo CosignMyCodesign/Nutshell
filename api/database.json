@@ -36,10 +36,18 @@
   ],
   "tasks": [
     {
-      "task": "I need to create more giphys!",
-      "userId": "1",
-      "date": "11/12/2018",
-      "id": 1
+      "task": "Build some jiffys",
+      "date": "11/13/2018",
+      "userId": 3,
+      "id": 1,
+      "completed": true
+    },
+    {
+      "task": "Build some giphys",
+      "date": "11/13/2018",
+      "userId": 3,
+      "id": 2,
+      "completed": true
     }
   ]
 }

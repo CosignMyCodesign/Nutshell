@@ -14,7 +14,7 @@ export default class APICollection {
             body: JSON.stringify(payload)
         })
     }
-    // put/patch
+    // patch
     static patchAPI(url, payload) {
         fetch(url, {
             method: "PATCH",
@@ -24,6 +24,16 @@ export default class APICollection {
             body: JSON.stringify(payload)
         })
     }
+    // put
+  //   static putAPI(url, payload) {
+  //     fetch(url, {
+  //         method: "PUT",
+  //         headers: {
+  //             "Content-Type": "application/json"
+  //         },
+  //         body: JSON.stringify(payload)
+  //     })
+  // }
     // delete
     static deleteAPI(url) {
         return fetch(url, {
