@@ -14,6 +14,11 @@
       "username": "bob",
       "password": "bmoney",
       "id": 3
+    },
+    {
+      "username": "testyboi",
+      "password": "password",
+      "id": 4
     }
   ],
   "messages": [
