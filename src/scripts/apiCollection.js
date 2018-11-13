@@ -35,8 +35,8 @@ export default class APICollection {
         return fetch("http://localhost:8088/user").then(response => response.json())
     }
     // save user to DB
-    static postUser(url, payload) {
-        fetch("http://localhost:8088/user", {
+    static postUser(payload) {
+        return fetch("http://localhost:8088/user", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
