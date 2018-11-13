@@ -43,18 +43,18 @@
   ],
   "events": [
     {
-      "name": "Color Me Badd",
-      "date": "2018-12-04",
-      "time": "01:00",
-      "location": "Bongo Java After Hours Theater",
-      "id": 1
-    },
-    {
       "name": "Sublime",
       "date": "2018-11-30",
       "time": "04:20",
       "location": "Starwood Amphitheatre",
       "id": 2
+    },
+    {
+      "name": "Bruce Willis From Home",
+      "date": "2018-11-29",
+      "time": "16:05",
+      "location": "prison",
+      "id": 3
     }
   ]
 }
