@@ -1,16 +1,29 @@
 {
   "user": [
     {
-      "username": "rollzac",
-      "email": "zac@nicksaban.com",
-      "password": "iluvsaban123",
+      "username": "zac",
+      "password": "saban",
       "id": 1
     },
     {
       "username": "kazathur92",
-      "email": "gabmin21@hotmail.com",
       "password": "woopy",
       "id": 2
+    },
+    {
+      "username": "bob",
+      "password": "bmoney",
+      "id": 3
+    },
+    {
+      "username": "zacdude",
+      "password": "word",
+      "id": 4
+    },
+    {
+      "username": "newguy",
+      "password": "doesitwork",
+      "id": 5
     }
   ],
   "messages": [
