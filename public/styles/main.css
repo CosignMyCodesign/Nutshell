@@ -43,6 +43,18 @@
   /* align-self: end; */
 }
 
+.prominent {
+  font-weight: bold;
+}
+
+.submit_state > .update_event {
+  display: none;
+}
+
+.edit_state > .submit_event {
+  display: none;
+}
+
 /* .complete {
   background-color:grey;
 } */

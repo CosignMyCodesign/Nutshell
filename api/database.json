@@ -40,11 +40,11 @@
   ],
   "news": [
     {
-      "title": "Midterm fury fuels Trump's assault on constitutional norms",
-      "url": "https://www.cnn.com/2018/11/12/politics/trump-midterms-reaction-constitution/index.html",
-      "synopsis": "President Donald Trump is intensifying his challenge to constitutional constraints and governing norms that are already facing their gravest test since Watergate in the 1970s.",
-      "date": "11/12/2018",
-      "id": 3
+      "title": "It Happened",
+      "url": "http://robbyhecht.com",
+      "synopsis": "WTF, Wow",
+      "date": "11/13/2018",
+      "id": 1
     }
   ],
   "tasks": [
@@ -79,6 +79,22 @@
       "date": "11/21/2018",
       "completed": true,
       "id": 5
+    }
+  ],
+  "events": [
+    {
+      "name": "Sublime",
+      "date": "2018-11-30",
+      "time": "04:20",
+      "location": "Starwood Amphitheatre",
+      "id": 2
+    },
+    {
+      "name": "Bruce Willis From Home",
+      "date": "2018-11-29",
+      "time": "16:05",
+      "location": "prison",
+      "id": 3
     }
   ]
 }
