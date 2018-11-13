@@ -22,7 +22,7 @@ const logout = document.getElementById("logout");
 logout.addEventListener("click", e => {
   LoginCollection.logout();
   console.log("You've been logged out. Thanks for using Nutshell!");
-  messageDiv.innerText = "You've been logged out. Thanks for using Nutshell!"
+//   messageDiv.innerText = "You've been logged out. Thanks for using Nutshell!"
 });
 
 // creates login forms dynamically
