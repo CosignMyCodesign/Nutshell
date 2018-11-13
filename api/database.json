@@ -36,18 +36,36 @@
   ],
   "tasks": [
     {
-      "task": "Build some jiffys",
-      "date": "11/13/2018",
+      "task": "testing",
+      "date": "11/12/2018",
       "userId": 3,
       "id": 1,
       "completed": true
     },
     {
-      "task": "Build some giphys",
+      "task": "kjhdsfads",
       "date": "11/13/2018",
       "userId": 3,
       "id": 2,
       "completed": true
+    },
+    {
+      "task": "test3",
+      "date": "11/18/2018",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "task": "Is userID working?",
+      "date": "11/15/2018",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "task": "lkjdsafa",
+      "date": "11/21/2018",
+      "completed": true,
+      "id": 5
     }
   ]
 }

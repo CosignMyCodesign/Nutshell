@@ -71,7 +71,7 @@ export default class TasksForm {
 
     let labelDateDefinition = {
       "element_type": "label",
-      "text_content": "Date",
+      "text_content": "Expected date of completion: ",
       "attribute_descriptions": [{
         "attribute_name": "for",
         "attribute_value": "task_date"
@@ -124,16 +124,13 @@ export default class TasksForm {
 
     taskSubmitButton.addEventListener("click", () => {
       const newTaskTitle = document.querySelector("#task_title").value
-      const newTaskDate = document.querySelector("#task_date").value
+      const newTaskDate = document.querySelector("#task_date").value.split("-")
+      const formattedTaskDate = `${newTaskDate[1]}/${newTaskDate[2]}/${newTaskDate[0]}`
       const newTaskStatus = false
-      // const newDate = new Date()
-      // const newDateMonth = newDate.getMonth()+1
-      // const newDateDay = newDate.getDate()
-      // const newDateYear = newDate.getFullYear()
 
       const new_task = {
-        title: newTaskTitle,
-        date: newTaskDate,
+        task: newTaskTitle,
+        date: formattedTaskDate,
         completed: newTaskStatus
       }
 

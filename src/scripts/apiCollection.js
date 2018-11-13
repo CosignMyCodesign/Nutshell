@@ -16,13 +16,14 @@ export default class APICollection {
     }
     // patch
     static patchAPI(url, payload) {
-        fetch(url, {
+          return fetch(url, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(payload)
-        })
+          })
+        
     }
     // put
   //   static putAPI(url, payload) {
