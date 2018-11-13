@@ -2,6 +2,9 @@
 
 import APICollection from "./apiCollection";
 
+// target div to display user messages
+const messageDiv = document.getElementById("message_div");
+
 // function to clear fields
 const clearFields = () => {
   username.value = "";
@@ -18,7 +21,8 @@ retrieveBtn.addEventListener("click", e => {
 const logout = document.getElementById("logout");
 logout.addEventListener("click", e => {
   LoginCollection.logout();
-  console.log("Thanks for using Nutshell!");
+  console.log("You've been logged out. Thanks for using Nutshell!");
+  messageDiv.innerText = "You've been logged out. Thanks for using Nutshell!"
 });
 
 // creates login forms dynamically
@@ -111,6 +115,8 @@ document.getElementById("registration_forms").addEventListener("click", e => {
   });
 });
 
+
+
 // class to handle all login/registration/logout interactions
 export default class LoginCollection {
   constructor(username, password) {
@@ -143,6 +149,7 @@ export default class LoginCollection {
     }
     // tell the user the result of the test
     console.log(testResult);
+    // messageDiv.innerText = testResult;
   }
 
   static registerUser(array, un, pw) {
@@ -170,6 +177,7 @@ export default class LoginCollection {
       APICollection.postUser(toSave);
     }
     console.log(message);
+    // messageDiv.innerText = testResult;
   }
 
   static logout() {
