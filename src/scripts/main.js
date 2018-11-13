@@ -7,15 +7,16 @@ import DomManager from "./domManager"
 
 let get_news_list = NewsList.buildNewsList()
 console.log(get_news_list);
-let get_events_list = EventsList.buildEventsList()
-
-DomManager.elementAppender(get_events_list, "#events_output")
+EventsList.buildEventsList()
+.then(function(eventsList) {
+  DomManager.elementAppender(eventsList, "#events_output")
+  let container = document.getElementById("events_list").childNodes[0]
+  // console.log(container)
+  container.classList.add("prominent")
+})
 DomManager.elementAppender(EventsForm.buildEventForm("post"),"#events_form")
 DomManager.elementAppender(get_news_list, "#news_output")
 DomManager.elementAppender(NewsForm.buildNewsForm("post"), "#news_form")
-
-
-
 
 
 

@@ -5,7 +5,7 @@ import Events from "./events"
 import APICollection from "./apiCollection"
 import ElementBuilder from "./elementBuilder"
 
-export default class NewsList {
+export default class EventsList {
   static buildEventsList() {
       let unorderedListDefinition = {
           "element_type": "ul",
@@ -33,9 +33,9 @@ export default class NewsList {
 
     let unordered_events_list = ElementBuilder.buildHTMLElement(unorderedListDefinition.element_type, unorderedListDefinition.attributes_descriptions)
 
-    APICollection.getAPI("http://localhost:8088/events").then((events) => {
-      let sorted = events.sort(dateSort)
-      console.log("new array", sorted)
+    return APICollection.getAPI("http://localhost:8088/events").then((events) => {
+      events.sort(dateSort)
+
       events.forEach((event) => {
           let currentEvent = new Events(event.name, event.date, event.time, event.location, event.userId, event.id)
           let currentEventDisplay = currentEvent.buildEventsDisplay()
@@ -45,10 +45,14 @@ export default class NewsList {
           unordered_events_list.appendChild(listed_event)
       })
 
+      return unordered_events_list
+
+
+      // container.classList.add("prominent")
+
       //needs to return outside of loop so it cycles through ALL events
   })
 
-  return unordered_events_list
   
   }
 
@@ -58,3 +62,13 @@ function dateSort (a, b) {
   let eventDateA = new Date(a.date), eventDateB = new Date(b.date);
   return eventDateA - eventDateB;
 }
+
+
+
+
+
+
+
+      // let firstEvent = events[0];
+      // firstEvent.classList.add("prominent")
+      // console.log(firstEvent)
