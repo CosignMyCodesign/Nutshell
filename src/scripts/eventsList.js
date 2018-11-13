@@ -34,6 +34,8 @@ export default class NewsList {
     let unordered_events_list = ElementBuilder.buildHTMLElement(unorderedListDefinition.element_type, unorderedListDefinition.attributes_descriptions)
 
     APICollection.getAPI("http://localhost:8088/events").then((events) => {
+      let sorted = events.sort(dateSort)
+      console.log("new array", sorted)
       events.forEach((event) => {
           let currentEvent = new Events(event.name, event.date, event.time, event.location, event.userId, event.id)
           let currentEventDisplay = currentEvent.buildEventsDisplay()
@@ -42,14 +44,17 @@ export default class NewsList {
           listed_event.appendChild(currentEventDisplay)
           unordered_events_list.appendChild(listed_event)
       })
-      
+
       //needs to return outside of loop so it cycles through ALL events
   })
 
   return unordered_events_list
-
-
-
-
-    }
+  
   }
+
+}
+
+function dateSort (a, b) {
+  let eventDateA = new Date(a.date), eventDateB = new Date(b.date);
+  return eventDateA - eventDateB;
+}
