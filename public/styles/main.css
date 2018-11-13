@@ -32,6 +32,7 @@
   border: 1px blue solid;
   height: 100vh;
   grid-area: a;
+  overflow: auto;
   /* align-self: start; */
 }
 
