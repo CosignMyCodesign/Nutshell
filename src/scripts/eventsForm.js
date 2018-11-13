@@ -28,7 +28,7 @@ export default class EventsForm {
           "attribute_descriptions": []
       }
 
-      let fieldsetNameDefinition = {
+      let fieldsetEventNameDefinition = {
           "element_type": "fieldset",
           "attribute_descriptions": [
               {
@@ -38,7 +38,7 @@ export default class EventsForm {
           ]
       }
 
-      let labelNameDefinition = {
+      let labelEventNameDefinition = {
           "element_type": "label",
           "text_content": "Event Name",
           "attribute_descriptions": [
@@ -49,7 +49,7 @@ export default class EventsForm {
           ]
       }
 
-      let inputNameDefinition = {
+      let inputEventNameDefinition = {
           "element_type": "input",
           "attribute_descriptions": [
               {
@@ -67,7 +67,7 @@ export default class EventsForm {
           ]
       }
 
-      let fieldsetDateDefinition = {
+      let fieldsetEventDateDefinition = {
           "element_type": "fieldset",
           "attribute_descriptions": [
               {
@@ -77,7 +77,7 @@ export default class EventsForm {
           ]
       }
 
-      let labelDateDefinition = {
+      let labelEventDateDefinition = {
           "element_type": "label",
           "text_content": "Date",
           "attribute_descriptions": [
@@ -88,7 +88,7 @@ export default class EventsForm {
           ]
       }
 
-      let inputDateDefinition = {
+      let inputEventDateDefinition = {
           "element_type": "input",
           "attribute_descriptions": [
               {
@@ -106,7 +106,7 @@ export default class EventsForm {
           ]
       }
 
-      let fieldsetTimeDefinition = {
+      let fieldsetEventTimeDefinition = {
         "element_type": "fieldset",
         "attribute_descriptions": [
             {
@@ -116,7 +116,7 @@ export default class EventsForm {
         ]
     }
 
-    let labelTimeDefinition = {
+    let labelEventTimeDefinition = {
         "element_type": "label",
         "text_content": "Time",
         "attribute_descriptions": [
@@ -127,7 +127,7 @@ export default class EventsForm {
         ]
     }
 
-    let inputTimeDefinition = {
+    let inputEventTimeDefinition = {
         "element_type": "input",
         "attribute_descriptions": [
             {
@@ -145,7 +145,7 @@ export default class EventsForm {
         ]
     }
 
-      let fieldsetLocationDefinition = {
+      let fieldsetEventLocationDefinition = {
         "element_type": "fieldset",
         "attribute_descriptions": [
             {
@@ -155,7 +155,7 @@ export default class EventsForm {
         ]
     }
 
-    let labelLocationDefinition = {
+    let labelEventLocationDefinition = {
         "element_type": "label",
         "text_content": "Location",
         "attribute_descriptions": [
@@ -166,7 +166,7 @@ export default class EventsForm {
         ]
     }
 
-    let inputLocationDefinition = {
+    let inputEventLocationDefinition = {
         "element_type": "input",
         "attribute_descriptions": [
             {
@@ -184,7 +184,7 @@ export default class EventsForm {
         ]
     }
 
-      let submitButtonDefinition = {
+      let submitButtonEventDefinition = {
           "element_type": "button",
           "text_content": "Save Event",
           "attribute_descriptions": [
@@ -197,23 +197,23 @@ export default class EventsForm {
 
       let eventsForm = ElementBuilder.buildHTMLElement(formDefinition.element_type, formDefinition.attribute_descriptions)
 
-      let nameFieldset = ElementBuilder.buildHTMLElement(fieldsetNameDefinition.element_type, fieldsetNameDefinition.attribute_descriptions)
-      let nameLabel = ElementBuilder.buildHTMLElement(labelNameDefinition.element_type, labelNameDefinition.attribute_descriptions, labelNameDefinition.text_content)
-      let nameInput = ElementBuilder.buildHTMLElement(inputNameDefinition.element_type, inputNameDefinition.attribute_descriptions)
+      let nameFieldset = ElementBuilder.buildHTMLElement(fieldsetEventNameDefinition.element_type, fieldsetEventNameDefinition.attribute_descriptions)
+      let nameLabel = ElementBuilder.buildHTMLElement(labelEventNameDefinition.element_type, labelEventNameDefinition.attribute_descriptions, labelEventNameDefinition.text_content)
+      let nameInput = ElementBuilder.buildHTMLElement(inputEventNameDefinition.element_type, inputEventNameDefinition.attribute_descriptions)
 
-      let dateFieldset = ElementBuilder.buildHTMLElement(fieldsetDateDefinition.element_type, fieldsetDateDefinition.attribute_descriptions)
-      let dateLabel = ElementBuilder.buildHTMLElement(labelDateDefinition.element_type, labelDateDefinition.attribute_descriptions, labelDateDefinition.text_content)
-      let dateInput = ElementBuilder.buildHTMLElement(inputDateDefinition.element_type, inputDateDefinition.attribute_descriptions)
+      let dateFieldset = ElementBuilder.buildHTMLElement(fieldsetEventDateDefinition.element_type, fieldsetEventDateDefinition.attribute_descriptions)
+      let dateLabel = ElementBuilder.buildHTMLElement(labelEventDateDefinition.element_type, labelEventDateDefinition.attribute_descriptions, labelEventDateDefinition.text_content)
+      let dateInput = ElementBuilder.buildHTMLElement(inputEventDateDefinition.element_type, inputEventDateDefinition.attribute_descriptions)
 
-      let timeFieldset = ElementBuilder.buildHTMLElement(fieldsetTimeDefinition.element_type, fieldsetTimeDefinition.attribute_descriptions)
-      let timeLabel = ElementBuilder.buildHTMLElement(labelTimeDefinition.element_type, labelTimeDefinition.attribute_descriptions, labelTimeDefinition.text_content)
-      let timeInput = ElementBuilder.buildHTMLElement(inputTimeDefinition.element_type, inputTimeDefinition.attribute_descriptions)
+      let timeFieldset = ElementBuilder.buildHTMLElement(fieldsetEventTimeDefinition.element_type, fieldsetEventTimeDefinition.attribute_descriptions)
+      let timeLabel = ElementBuilder.buildHTMLElement(labelEventTimeDefinition.element_type, labelEventTimeDefinition.attribute_descriptions, labelEventTimeDefinition.text_content)
+      let timeInput = ElementBuilder.buildHTMLElement(inputEventTimeDefinition.element_type, inputEventTimeDefinition.attribute_descriptions)
 
-      let locationFieldset = ElementBuilder.buildHTMLElement(fieldsetLocationDefinition.element_type, fieldsetLocationDefinition.attribute_descriptions)
-      let locationLabel = ElementBuilder.buildHTMLElement(labelLocationDefinition.element_type, labelLocationDefinition.attribute_descriptions, labelLocationDefinition.text_content)
-      let locationInput = ElementBuilder.buildHTMLElement(inputLocationDefinition.element_type, inputLocationDefinition.attribute_descriptions)
+      let locationFieldset = ElementBuilder.buildHTMLElement(fieldsetEventLocationDefinition.element_type, fieldsetEventLocationDefinition.attribute_descriptions)
+      let locationLabel = ElementBuilder.buildHTMLElement(labelEventLocationDefinition.element_type, labelEventLocationDefinition.attribute_descriptions, labelEventLocationDefinition.text_content)
+      let locationInput = ElementBuilder.buildHTMLElement(inputEventLocationDefinition.element_type, inputEventLocationDefinition.attribute_descriptions)
 
-      let submitButton = ElementBuilder.buildHTMLElement(submitButtonDefinition.element_type, submitButtonDefinition.attribute_descriptions, submitButtonDefinition.text_content)
+      let submitButton = ElementBuilder.buildHTMLElement(submitButtonEventDefinition.element_type, submitButtonEventDefinition.attribute_descriptions, submitButtonEventDefinition.text_content)
 
       // let hiddenElement = ElementBuilder.buildHTMLElement(hiddenSelector.element_type, hiddenSelector.attributes_descriptions)
       nameFieldset.appendChild(nameLabel)

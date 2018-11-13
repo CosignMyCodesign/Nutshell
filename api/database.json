@@ -48,6 +48,13 @@
       "time": "01:00",
       "location": "Bongo Java After Hours Theater",
       "id": 1
+    },
+    {
+      "name": "Sublime",
+      "date": "2018-11-30",
+      "time": "04:20",
+      "location": "Starwood Amphitheatre",
+      "id": 2
     }
   ]
 }

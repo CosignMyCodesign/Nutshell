@@ -42,12 +42,11 @@ export default class NewsList {
           listed_event.appendChild(currentEventDisplay)
           unordered_events_list.appendChild(listed_event)
       })
+      
       //needs to return outside of loop so it cycles through ALL events
   })
+
   return unordered_events_list
-
-
-
 
 
 
