@@ -9,13 +9,14 @@
 /* .form_output {
     border: 1px blue solid;
 } */
-/* 
+/*
 .form_input {
     border: 1px red solid;
 } */
 
 .container {
   display: grid;
+  height: 100vh;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 10px;
   grid-auto-rows: 100px;
@@ -29,12 +30,14 @@
 
 .form_output {
   border: 1px blue solid;
+  height: 100vh;
   grid-area: a;
   /* align-self: start; */
 }
 
 .form_input {
   border: 1px red solid;
+  height: 100vh;
   grid-area: b;
   /* align-self: end; */
 }
