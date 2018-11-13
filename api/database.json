@@ -16,9 +16,14 @@
       "id": 3
     },
     {
-      "username": "testyboi",
-      "password": "password",
+      "username": "zacdude",
+      "password": "word",
       "id": 4
+    },
+    {
+      "username": "newguy",
+      "password": "doesitwork",
+      "id": 5
     }
   ],
   "messages": [

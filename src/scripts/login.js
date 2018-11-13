@@ -2,48 +2,11 @@
 
 import APICollection from "./apiCollection";
 
-// function to save user to session storage - no longer needed! can delete
-const saveUser = username => {
-  sessionStorage.setItem("username", username);
-  // sessionStorage.setItem("password", password);
-  console.log("user saved to session storage");
-};
-
-// TODO - move username and password outside of these EL's
-// but they will have different ID's when dynamically created
-
-// TESTING
-const username = document.getElementById("username");
-const password = document.getElementById("password");
-
 // function to clear fields
 const clearFields = () => {
-    username.value = "";
-    password.value = "";
-}
-
-// adding EL and logic to "go" button
-const saveBtn = document.getElementById("submit-login");
-saveBtn.addEventListener("click", e => {
-//   const username = document.getElementById("username");
-//   const password = document.getElementById("password");
-  APICollection.fetchUsers().then(returned => {
-    LoginCollection.verifyUser(returned, username.value, password.value);
-  });
   username.value = "";
   password.value = "";
-});
-
-const registerButton = document.getElementById("submit-register");
-registerButton.addEventListener("click", e => {
-//   const username = document.getElementById("username");
-//   const password = document.getElementById("password");
-  APICollection.fetchUsers().then(returned => {
-    LoginCollection.registerUser(returned, username.value, password.value);
-  });
-//   username.value = "";
-//   password.value = "";
-});
+};
 
 // gets current session storage and logs to console
 const retrieveBtn = document.getElementById("getUser");
@@ -51,39 +14,104 @@ retrieveBtn.addEventListener("click", e => {
   console.log("current user is", sessionStorage.getItem("username"));
 });
 
+// logout button
 const logout = document.getElementById("logout");
 logout.addEventListener("click", e => {
-    LoginCollection.logout();
-})
+  LoginCollection.logout();
+  console.log("Thanks for using Nutshell!");
+});
 
-// creates login forms dynamically - tabled until core functionality is working
-// const loginFormFactory = () => {
-//     const loginSection = document.getElementById("login")
-//     loginSection.innerHTML = ""
+// creates login forms dynamically
+const loginFormFactory = () => {
+  const loginSection = document.getElementById("login_fields");
+  loginSection.innerHTML = "";
 
-//     let user_field = document.createElement("input")
-//     user_field.setAttribute("type", "text")
-//     let user_label = document.createElement("label")
-//     user_label.innerHTML = "Username"
+  let user_field = document.createElement("input");
+  user_field.setAttribute("type", "text");
+  user_field.id = "username";
+  let user_label = document.createElement("label");
+  user_label.innerHTML = "Username";
 
-//     let pass_field = document.createElement("input")
-//     pass_field.setAttribute("type", "text")
-//     let pass_label = document.createElement("label")
-//     pass_label.innerHTML = "Password"
+  let pass_field = document.createElement("input");
+  pass_field.setAttribute("type", "text");
+  pass_field.id = "password";
+  let pass_label = document.createElement("label");
+  pass_label.innerHTML = "Password";
 
-//     loginSection.appendChild(user_field)
-//     loginSection.appendChild(user_label)
-//     loginSection.appendChild(pass_field)
-//     loginSection.appendChild(pass_label)
-// }
+  let loginButton = document.createElement("button");
+  loginButton.innerText = "Login";
+  loginButton.id = "submit-login";
 
-// document.getElementById("login_forms").addEventListener("click", e => {
-//     loginFormFactory();
-//     console.log("login forms created")
-// })
+  loginSection.appendChild(user_field);
+  loginSection.appendChild(user_label);
+  loginSection.appendChild(pass_field);
+  loginSection.appendChild(pass_label);
+  loginSection.appendChild(loginButton);
+};
+
+// add EL + call function to create login forms
+document.getElementById("login_form_button").addEventListener("click", e => {
+  loginFormFactory();
+  console.log("login forms created");
+  const username = document.getElementById("username");
+  const password = document.getElementById("password");
+  // adding EL and logic to "go" button
+  const saveBtn = document.getElementById("submit-login");
+  saveBtn.addEventListener("click", e => {
+    APICollection.fetchUsers()
+      .then(returned => {
+        LoginCollection.verifyUser(returned, username.value, password.value);
+      })
+      .then(data => {
+        clearFields();
+      });
+  });
+});
 
 // creates registration forms dynamically
+const regFormFactory = () => {
+  const loginSection = document.getElementById("login_fields");
+  loginSection.innerHTML = "";
 
+  let user_field = document.createElement("input");
+  user_field.setAttribute("type", "text");
+  user_field.id = "username";
+  let user_label = document.createElement("label");
+  user_label.innerHTML = "Username";
+
+  let pass_field = document.createElement("input");
+  pass_field.setAttribute("type", "text");
+  pass_field.id = "password";
+  let pass_label = document.createElement("label");
+  pass_label.innerHTML = "Desired Password";
+
+  let loginButton = document.createElement("button");
+  loginButton.innerText = "Login";
+  loginButton.id = "register_user";
+
+  loginSection.appendChild(user_field);
+  loginSection.appendChild(user_label);
+  loginSection.appendChild(pass_field);
+  loginSection.appendChild(pass_label);
+  loginSection.appendChild(loginButton);
+};
+
+// add EL + call function to create registration forms
+document.getElementById("registration_forms").addEventListener("click", e => {
+  regFormFactory();
+    const registerButton = document.getElementById("register_user");
+  registerButton.addEventListener("click", e => {
+    APICollection.fetchUsers()
+      .then(returned => {
+        LoginCollection.registerUser(returned, username.value, password.value);
+      })
+      .then(data => {
+        clearFields();
+      });
+  });
+});
+
+// class to handle all login/registration/logout interactions
 export default class LoginCollection {
   constructor(username, password) {
     this.username = username;
@@ -96,11 +124,11 @@ export default class LoginCollection {
     for (let i = 0; i < array.length; i++) {
       if (array[i].username.indexOf(un) > -1) {
         // now check password
-        if (array[i].password.indexOf(pw) > -1) {
+        if (array[i].password === pw) {
           // log in
           // store user ID (from matching object) in session storage
-          sessionStorage.setItem("userID", array[i].id)
-          sessionStorage.setItem("username", array[i].username)
+          sessionStorage.setItem("userID", array[i].id);
+          sessionStorage.setItem("username", array[i].username);
           // TODO: save user to session storage, hide login div, show everything else
 
           testResult = "You are logged in!";
@@ -123,21 +151,21 @@ export default class LoginCollection {
     let message = "";
     for (let i = 0; i < array.length; i++) {
       if (array[i].username.indexOf(un) != -1) {
-        console.log(array[i].username.indexOf(un))
-        console.log(array[i].username)
-        console.log(un)
+        // console.log(array[i].username.indexOf(un));
+        // console.log(array[i].username);
+        // console.log(un);
         // problem
         message = "Username already exists, please try logging in.";
         verified = false;
         break;
       } else {
-        console.log("no match:" + array[i])
+        // console.log("no match:" + array[i]);
         verified = true;
       }
     }
     // if user was not in database, allow registration
     if (verified) {
-      message = "saving new user";
+      message = "New user saved. Please log in.";
       let toSave = new LoginCollection(un, pw);
       APICollection.postUser(toSave);
     }
