@@ -41,4 +41,18 @@ export default class APICollection {
             method: "DELETE"
         })
     }
+    // fetch array of users from DB
+    static fetchUsers() {
+        return fetch("http://localhost:8088/user").then(response => response.json())
+    }
+    // save user to DB
+    static postUser(payload) {
+        return fetch("http://localhost:8088/user", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        })
+    }
 }

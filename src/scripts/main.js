@@ -3,6 +3,8 @@
 import NewsList from "./newsList"
 import NewsForm from "./newsForm"
 import DomManager from "./domManager"
+import APICollection from "./apiCollection";
+import LoginCollection from "./login"
 import TasksList from "./tasksList"
 import TasksForm from "./tasksForm"
 
