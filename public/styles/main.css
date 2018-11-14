@@ -10,6 +10,21 @@ font-family: 'Oranienbaum', serif; */
   --longhorn-orange: #A44200;
 }
 
+body {
+  background-color: rgb(252, 222, 193)
+}
+
+#login_output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login_output button {
+  margin: 10px;
+  width: 50%;
+}
+
 /* .form_output {
     border: 1px blue solid;
 } */
@@ -34,7 +49,7 @@ font-family: 'Oranienbaum', serif; */
 }
 
 .form_output {
-  border: 1px black solid;
+  /* border: 1px black solid; */
   height: 100vh;
   grid-area: a;
   overflow: auto;
@@ -42,7 +57,7 @@ font-family: 'Oranienbaum', serif; */
 }
 
 .form_input {
-  border: 1px black solid;
+  border-left: 3px solid var(--darkest-red);
   height: 100vh;
   grid-area: b;
   /* align-self: end; */
@@ -122,10 +137,6 @@ fieldset {
   /* margin-top: 10px;
   margin-bottom: 20px; */
   padding: 20px;
-}
-
-body {
-  background-color: rgb(252, 222, 193)
 }
 
 /* Makes the input fields centered and the same width */
