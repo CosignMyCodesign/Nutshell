@@ -2,6 +2,8 @@
 
 import APICollection from "./apiCollection"
 import ElementBuilder from "./elementBuilder"
+import TasksList from "./tasksList"
+import DomManager from "./domManager"
 
 export default class TasksForm {
   static buildTasksForm(form_action) {
@@ -122,7 +124,8 @@ export default class TasksForm {
     tasksForm.appendChild(taskDateFieldset)
     tasksForm.appendChild(taskSubmitButton)
 
-    taskSubmitButton.addEventListener("click", () => {
+    taskSubmitButton.addEventListener("click", (event) => {
+      event.preventDefault()
       const newTaskTitle = document.querySelector("#task_title").value
       const newTaskDate = document.querySelector("#task_date").value.split("-")
       const formattedTaskDate = `${newTaskDate[1]}/${newTaskDate[2]}/${newTaskDate[0]}`
@@ -131,12 +134,17 @@ export default class TasksForm {
       const new_task = {
         task: newTaskTitle,
         date: formattedTaskDate,
-        completed: newTaskStatus
+        completed: newTaskStatus,
+        userId: sessionStorage.getItem("username")
       }
 
-      APICollection.postAPI("http://localhost:8088/tasks", new_task).then(
-        window.location.reload("http://localhost:8080")
-      )
+      APICollection.postAPI("http://localhost:8088/tasks", new_task).then(() => {
+        document.querySelector("#tasks_output").innerHTML = ""
+        document.querySelector("#task_title").value = ""
+        document.querySelector("#task_date").value = ""
+        let get_task_list = TasksList.buildTaskList()
+        DomManager.elementAppender(get_task_list, "#tasks_output")
+      })
     })
 
     return tasksForm

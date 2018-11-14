@@ -12,6 +12,7 @@ import messageForm from "./messageForm";
 import MessagesList from "./messagesList";
 import Message from "./messages";
 
+
 let get_news_list = NewsList.buildNewsList();
 console.log(get_news_list);
 EventsList.buildEventsList().then(function(eventsList) {
@@ -41,3 +42,17 @@ DomManager.elementAppender(TasksForm.buildTasksForm("post"), "#tasks_form");
 window.onload = messageForm.msgFormCreator();
 
 Message.messageMaster();
+
+EventsList.buildEventsList()
+.then(function(eventsList) {
+  DomManager.elementAppender(eventsList, "#events_output")
+  let container = document.getElementById("events_list").childNodes[0]
+  container.classList.add("prominent")
+})
+DomManager.elementAppender(EventsForm.buildEventForm("post"),"#events_form")
+let get_task_list = TasksList.buildTaskList()
+let get_news_list = NewsList.buildNewsList()
+DomManager.elementAppender(get_task_list, "#tasks_output")
+DomManager.elementAppender(TasksForm.buildTasksForm("post"), "#tasks_form")
+DomManager.elementAppender(get_news_list, "#news_output")
+DomManager.elementAppender(NewsForm.buildNewsForm("post"), "#news_form")

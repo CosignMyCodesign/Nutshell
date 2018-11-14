@@ -96,7 +96,6 @@ export default class Events {
         let eventsParagraph = ElementBuilder.buildHTMLElement(paragraphDefinition.element_type, paragraphDefinition.attribute_descriptions, paragraphDefinition.text_content)
         let eventsParagraph2 = ElementBuilder.buildHTMLElement(paragraphDefinition2.element_type, paragraphDefinition2.attribute_descriptions, paragraphDefinition2.text_content)
         let eventsParagraph3 = ElementBuilder.buildHTMLElement(paragraphDefinition3.element_type, paragraphDefinition3.attribute_descriptions, paragraphDefinition3.text_content)
-
         let updateButton = ElementBuilder.buildHTMLElement(updateButtonDefinition.element_type, updateButtonDefinition.attributes_descriptions, updateButtonDefinition.text_content)
         let deleteButton = ElementBuilder.buildHTMLElement(deleteButtonDefinition.element_type, deleteButtonDefinition.attributes_descriptions, deleteButtonDefinition.text_content)
 
