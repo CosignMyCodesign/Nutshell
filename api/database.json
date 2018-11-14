@@ -6,34 +6,54 @@
       "id": 1
     },
     {
-      "username": "kazathur92",
-      "password": "woopy",
+      "username": "alfonso",
+      "password": "gify",
       "id": 2
     },
     {
-      "username": "bob",
-      "password": "bmoney",
+      "username": "ousama",
+      "password": "auburn",
       "id": 3
     },
     {
-      "username": "zacdude",
-      "password": "word",
+      "username": "dillon",
+      "password": "houstons",
       "id": 4
     },
     {
-      "username": "newguy",
+      "username": "robby",
       "password": "doesitwork",
       "id": 5
     },
     {
-      "username": "ousama",
-      "password": "ousama",
-      "id": 6
+      "message": "iron bowl ez win",
+      "userId": "ousama",
+      "date": "2018-11-14T00:40:52.054Z",
+      "id": 1
     },
     {
-      "username": "billy",
-      "password": "billy",
-      "id": 7
+      "message": "i love food",
+      "userId": "robby",
+      "date": "2018-11-09T00:40:54.054Z",
+      "id": 2
+    },
+    {
+      "message": "hey everyone",
+      "userId": "zac",
+      "date": "2018-11-12T00:40:54.054Z",
+      "id": 3
+    },
+    {
+      "message": "zac is cool",
+      "userId": "zac",
+      "date": "2018-11-13T00:40:54.054Z",
+      "id": 4
+    },
+    {
+      "message": "roll tide",
+      "userId": "ousama",
+      "date": "2018-11-14T17:11:10.353Z",
+      "id": 5
     }
   ],
   "messages": [],
