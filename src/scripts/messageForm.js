@@ -3,10 +3,8 @@
 //user edits own message
 
 import APICollection from "./apiCollection"
-import ElementBuilder from "./elementBuilder"
 import Message from "./messages";
-
-const messageDiv = document.getElementById("messages_output")
+import MessagesList from "./messagesList";
 
 
 export default class MessageForm {
@@ -41,11 +39,8 @@ export default class MessageForm {
             let currDate = new Date
             let body = document.getElementById("message_body").value
             let message = new Message(body, sessionStorage.getItem("username"), currDate)
-            // fetch post for message
-            console.log(message)
-            APICollection.postMessage(message)
+            // post message to database, clear out div, re-render
+            APICollection.postMessage(message).then(MessagesList.clearDiv()).then(Message.messageMaster())
         })
-
-        // then call a (yet to be written) function to re-render message window
     }
 }

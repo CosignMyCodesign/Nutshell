@@ -10,6 +10,7 @@ import TasksList from "./tasksList";
 import TasksForm from "./tasksForm";
 import messageForm from "./messageForm";
 import MessagesList from "./messagesList";
+import Message from "./messages";
 
 let get_news_list = NewsList.buildNewsList();
 console.log(get_news_list);
@@ -37,17 +38,6 @@ DomManager.elementAppender(TasksForm.buildTasksForm("post"), "#tasks_form");
 
 // messages //
 
-// create form on window load
 window.onload = messageForm.msgFormCreator();
 
-APICollection.getMessages()
-  .then(msgArray => {
-    console.log(msgArray);
-    let sortedArray = MessagesList.sortMessages(msgArray);
-    return sortedArray
-  })
-  .then(sorted => {
-    console.log(sorted); // undefined?
-    let display = MessagesList.renderMessages2(sorted);
-    console.log(display);
-  });
+Message.messageMaster();
