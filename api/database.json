@@ -28,6 +28,19 @@
   ],
   "messages": [
     {
+      "username": "billy",
+      "password": "billy",
+      "id": 6
+    }
+  ],
+  "messages": [
+    {
+      "message": "war eagle",
+      "userId": "ousama",
+      "date": "2018-11-14T17:35:24.298Z",
+      "id": 1
+    },
+    {
       "message": "iron bowl ez win",
       "userId": "ousama",
       "date": "2018-11-14T00:40:52.054Z",
