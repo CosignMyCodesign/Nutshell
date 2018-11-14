@@ -56,7 +56,14 @@
       "id": 5
     }
   ],
-  "messages": [],
+  "messages": [
+    {
+      "message": "war eagle",
+      "userId": "ousama",
+      "date": "2018-11-14T17:35:24.298Z",
+      "id": 1
+    }
+  ],
   "news": [
     {
       "title": "Midterm fury fuels Trump's assault on constitutional norms",
