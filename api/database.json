@@ -49,18 +49,18 @@
   ],
   "tasks": [
     {
-      "task": "testing",
+      "task": "hello",
       "date": "11/12/2018",
       "userId": 3,
       "id": 1,
-      "completed": true
+      "completed": false
     },
     {
       "task": "kjhdsfads",
       "date": "11/13/2018",
       "userId": 3,
       "id": 2,
-      "completed": true
+      "completed": false
     },
     {
       "task": "test3",
