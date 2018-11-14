@@ -40,14 +40,6 @@
       "id": 6
     },
     {
-      "message": "what",
-      "userId": "robby",
-      "message": "i love food",
-      "userId": "Robby",
-      "date": "2018-11-09T00:40:54.054Z",
-      "id": 2
-    },
-    {
       "message": "hey everyone",
       "userId": "zac",
       "date": "2018-11-12T00:40:54.054Z",
@@ -70,6 +62,18 @@
       "userId": "dillonWilliams",
       "date": "2018-11-15T17:11:10.353Z",
       "id": 6
+    },
+    {
+      "message": "zac",
+      "userId": "zac",
+      "date": "2018-11-14T22:58:37.452Z",
+      "id": 7
+    },
+    {
+      "message": "zac",
+      "userId": "zac",
+      "date": "2018-11-14T22:58:43.116Z",
+      "id": 8
     }
   ],
   "news": [
