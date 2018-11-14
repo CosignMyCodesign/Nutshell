@@ -131,6 +131,7 @@ export default class TasksForm {
       const new_task = {
         task: newTaskTitle,
         date: formattedTaskDate,
+        userId: sessionStorage.getItem("username"),
         completed: newTaskStatus
       }
 
