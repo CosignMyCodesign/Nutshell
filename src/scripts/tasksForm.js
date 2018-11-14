@@ -38,7 +38,7 @@ export default class TasksForm {
     }
     let labelNameDefinition = {
       "element_type": "label",
-      "text_content": "Task Name: ",
+      "text_content": "Task Name ",
       "attribute_descriptions": [{
         "attribute_name": "for",
         "attribute_value": "task_name"
@@ -73,7 +73,7 @@ export default class TasksForm {
 
     let labelDateDefinition = {
       "element_type": "label",
-      "text_content": "Expected date of completion: ",
+      "text_content": "Expected date of completion ",
       "attribute_descriptions": [{
         "attribute_name": "for",
         "attribute_value": "task_date"
