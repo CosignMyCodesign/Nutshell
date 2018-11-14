@@ -250,7 +250,8 @@ export default class NewsForm {
                 title: newArticleTitle,
                 url: newArticleURL,
                 synopsis: newArticleSynopsis,
-                date: `${newDateMonth}/${newDateDay}/${newDateYear}`
+                date: `${newDateMonth}/${newDateDay}/${newDateYear}`,
+                userId: sessionStorage.getItem("username")
             }
 
             APICollection.postAPI("http://localhost:8088/news", new_article).then(

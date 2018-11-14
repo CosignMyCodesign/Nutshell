@@ -36,11 +36,14 @@ export default class NewsList {
         APICollection.getAPI("http://localhost:8088/news").then((news) => {
             news.forEach((article) => {
                 let currentArticle = new News(article.title, article.synopsis, article.url, article.date, article.userId, article.id)
-                let currentArticleDisplay = currentArticle.buildNewsDisplay()
-
-                let listed_article = ElementBuilder.buildHTMLElement(listDefinition.element_type, listDefinition.attributes_descriptions)
-                listed_article.appendChild(currentArticleDisplay)
-                unordered_news_list.appendChild(listed_article)
+                let currentUser = sessionStorage.getItem("username")
+                if(article.userId === currentUser) {
+                    let currentArticleDisplay = currentArticle.buildNewsDisplay()
+    
+                    let listed_article = ElementBuilder.buildHTMLElement(listDefinition.element_type, listDefinition.attributes_descriptions)
+                    listed_article.appendChild(currentArticleDisplay)
+                    unordered_news_list.appendChild(listed_article)
+                }
             })
             //needs to return outside of loop so it cycles through ALL articles
         })
