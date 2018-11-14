@@ -12,14 +12,6 @@ import MessageForm from "./messageForm";
 import MessagesList from "./messagesList";
 import Message from "./messages";
 
-EventsList.buildEventsList().then(function(eventsList) {
-  DomManager.elementAppender(eventsList, "#events_output");
-  let container = document.getElementById("events_list").childNodes[0];
-  // console.log(container)
-  container.classList.add("prominent");
-});
-DomManager.elementAppender(EventsForm.buildEventForm("post"), "#events_form");
-
 // messages //
 
 window.onload = MessageForm.msgFormCreator();
@@ -32,6 +24,7 @@ EventsList.buildEventsList()
   let container = document.getElementById("events_list").childNodes[0]
   container.classList.add("prominent")
 })
+DomManager.elementAppender(EventsForm.buildEventForm("post"), "#events_form");
 let get_task_list = TasksList.buildTaskList()
 let get_news_list = NewsList.buildNewsList()
 DomManager.elementAppender(get_task_list, "#tasks_output")
