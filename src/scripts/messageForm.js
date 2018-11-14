@@ -7,6 +7,7 @@ import Message from "./messages";
 import MessagesList from "./messagesList";
 
 
+
 export default class MessageForm {
     // create forms
     static msgFormCreator () {

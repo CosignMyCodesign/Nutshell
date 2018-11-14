@@ -23,11 +23,6 @@ export default class NewsForm {
             ]
         }
 
-        let breakDefinition = {
-            "element_type": "br",
-            "attribute_descriptions": []
-        }
-
         let fieldsetTitleDefinition = {
             "element_type": "fieldset",
             "attribute_descriptions": [
@@ -106,45 +101,6 @@ export default class NewsForm {
             ]
         }
 
-        // let fieldsetDateDefinition = {
-        //     "element_type": "fieldset",
-        //     "attribute_descriptions": [
-        //         {
-        //             "attribute_name": "class",
-        //             "attribute_value": "new_article_date"
-        //         }
-        //     ]
-        // }
-
-        // let labelDateDefinition = {
-        //     "element_type": "label",
-        //     "text_content": "Date",
-        //     "attribute_descriptions": [
-        //         {
-        //             "attribute_name": "for",
-        //             "attribute_value": "article_date"
-        //         }
-        //     ]
-        // }
-
-        // let inputDateDefinition = {
-        //     "element_type": "input",
-        //     "attribute_descriptions": [
-        //         {
-        //             "attribute_name": "id",
-        //             "attribute_value": "article_date"
-        //         },
-        //         {
-        //             "attribute_name": "class",
-        //             "attribute_value": "article_date"
-        //         },
-        //         {
-        //             "attribute_name": "type",
-        //             "attribute_value": "datetime-local"
-        //         }
-        //     ]
-        // }
-
         let fieldsetSynopsisDefinition = {
             "element_type": "fieldset",
             "attribute_descriptions": [
@@ -195,20 +151,6 @@ export default class NewsForm {
             ]
         }
 
-        // let hiddenSelector = {
-        //     "element_type": "input",
-        //     "attributes_descriptions": [
-        //         {
-        //             "attribute_name": "type",
-        //             "attribute_value": "hidden"
-        //         },
-        //         {
-        //             "attribute_name": "id",
-        //             "attribute_value": "contact_id"
-        //         },
-        //     ]
-        // }
-
         let newsForm = ElementBuilder.buildHTMLElement(formDefinition.element_type, formDefinition.attribute_descriptions)
         let titleFieldset = ElementBuilder.buildHTMLElement(fieldsetTitleDefinition.element_type, fieldsetTitleDefinition.attribute_descriptions)
         let titleLabel = ElementBuilder.buildHTMLElement(labelTitleDefinition.element_type, labelTitleDefinition.attribute_descriptions, labelTitleDefinition.text_content)
@@ -216,26 +158,19 @@ export default class NewsForm {
         let urlFieldset = ElementBuilder.buildHTMLElement(fieldsetURLDefinition.element_type, fieldsetURLDefinition.attribute_descriptions)
         let urlLabel = ElementBuilder.buildHTMLElement(labelURLDefinition.element_type, labelURLDefinition.attribute_descriptions, labelURLDefinition.text_content)
         let urlInput = ElementBuilder.buildHTMLElement(inputURLDefinition.element_type, inputURLDefinition.attribute_descriptions)
-        // let dateFieldset = ElementBuilder.buildHTMLElement(fieldsetDateDefinition.element_type, fieldsetDateDefinition.attribute_descriptions)
-        // let dateLabel = ElementBuilder.buildHTMLElement(labelDateDefinition.element_type, labelDateDefinition.attribute_descriptions, labelDateDefinition.text_content)
-        // let dateInput = ElementBuilder.buildHTMLElement(inputDateDefinition.element_type, inputDateDefinition.attribute_descriptions)
         let synopsisFieldset = ElementBuilder.buildHTMLElement(fieldsetSynopsisDefinition.element_type, fieldsetSynopsisDefinition.attribute_descriptions)
         let synopsisLabel = ElementBuilder.buildHTMLElement(labelSynopsisDefinition.element_type, labelSynopsisDefinition.attribute_descriptions, labelSynopsisDefinition.text_content)
         let synopsisInput = ElementBuilder.buildHTMLElement(inputSynopsisDefinition.element_type, inputSynopsisDefinition.attribute_descriptions)
         let submitButton = ElementBuilder.buildHTMLElement(submitButtonDefinition.element_type, submitButtonDefinition.attribute_descriptions, submitButtonDefinition.text_content)
-        // let hiddenElement = ElementBuilder.buildHTMLElement(hiddenSelector.element_type, hiddenSelector.attributes_descriptions)
         titleFieldset.appendChild(titleLabel)
         titleFieldset.appendChild(titleInput)
         urlFieldset.appendChild(urlLabel)
         urlFieldset.appendChild(urlInput)
-        // dateFieldset.appendChild(dateLabel)
-        // dateFieldset.appendChild(dateInput)
         synopsisFieldset.appendChild(synopsisLabel)
         synopsisFieldset.appendChild(synopsisInput)
         
         newsForm.appendChild(titleFieldset)
         newsForm.appendChild(urlFieldset)
-        // newsForm.appendChild(dateFieldset)
         newsForm.appendChild(synopsisFieldset)
         newsForm.appendChild(submitButton)
         
@@ -262,7 +197,7 @@ export default class NewsForm {
                 document.querySelector("#article_title").value = ""
                 document.querySelector("#article_url").value = ""
                 document.querySelector("#article_synopsis").value = ""
-                let get_news_list = NewsList.buildNewsList()
+                let get_news_list = NewsList.buildNewsList()             
                 DomManager.elementAppender(get_news_list, "#news_output")
             })
         })

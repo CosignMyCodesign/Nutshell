@@ -28,13 +28,6 @@
   ],
   "messages": [
     {
-      "username": "billy",
-      "password": "billy",
-      "id": 6
-    }
-  ],
-  "messages": [
-    {
       "message": "war eagle",
       "userId": "ousama",
       "date": "2018-11-14T17:35:24.298Z",
@@ -75,6 +68,42 @@
       "userId": "dillonWilliams",
       "date": "2018-11-15T17:11:10.353Z",
       "id": 6
+    },
+    {
+      "message": "hello",
+      "userId": null,
+      "date": "2018-11-14T22:36:30.349Z",
+      "id": 7
+    },
+    {
+      "message": "hello",
+      "userId": "dillonWilliams",
+      "date": "2018-11-14T22:36:50.658Z",
+      "id": 8
+    },
+    {
+      "message": "ijdsd",
+      "userId": "dillonWilliams",
+      "date": "2018-11-14T22:45:11.978Z",
+      "id": 9
+    },
+    {
+      "message": "test",
+      "userId": null,
+      "date": "2018-11-14T22:57:45.146Z",
+      "id": 10
+    },
+    {
+      "message": "test",
+      "userId": null,
+      "date": "2018-11-14T22:57:51.437Z",
+      "id": 11
+    },
+    {
+      "message": "test",
+      "userId": null,
+      "date": "2018-11-14T22:57:52.898Z",
+      "id": 12
     }
   ],
   "news": [

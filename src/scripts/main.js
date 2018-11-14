@@ -16,7 +16,7 @@ import Message from "./messages";
 
 window.onload = MessageForm.msgFormCreator();
 
-Message.messageMaster();
+Message.messageMaster()
 
 EventsList.buildEventsList()
 .then(function(eventsList) {
