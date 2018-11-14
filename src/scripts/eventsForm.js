@@ -2,6 +2,8 @@
 
 import APICollection from "./apiCollection"
 import ElementBuilder from "./elementBuilder"
+import EventsList from "./eventsList"
+import DomManager from "./domManager"
 
 export default class EventsForm {
     static buildEventForm(form_action) {
@@ -254,7 +256,8 @@ export default class EventsForm {
         eventsForm.appendChild(submitButton)
         eventsForm.appendChild(updateButton)
 
-        submitButton.addEventListener("click", () => {
+        submitButton.addEventListener("click", (event) => {
+            event.preventDefault()
             const newEventName = document.querySelector("#event_name").value
             const newEventDate = document.querySelector("#event_date").value
             const newEventTime = document.querySelector("#event_time").value
@@ -267,12 +270,23 @@ export default class EventsForm {
                 userId: sessionStorage.getItem("username")
             }
 
-            APICollection.postAPI("http://localhost:8088/events", new_event).then(
-                window.location.reload("http://localhost:8080")
-            )
+            APICollection.postAPI("http://localhost:8088/events", new_event).then(() => {
+                document.querySelector("#events_output").innerHTML = ""
+                document.querySelector("#event_name").value = ""
+                document.querySelector("#event_date").value = ""
+                document.querySelector("#event_time").value = ""
+                document.querySelector("#event_location").value = ""
+                EventsList.buildEventsList()
+                    .then(function(eventsList) {
+                    DomManager.elementAppender(eventsList, "#events_output")
+                    let container = document.getElementById("events_list").childNodes[0]
+                    container.classList.add("prominent")
+                    })
+            })
         })
 
-        updateButton.addEventListener("click", () => {
+        updateButton.addEventListener("click", (event) => {
+            event.preventDefault()
             document.querySelector("#event_form").classList.remove("edit_state")
             document.querySelector("#event_form").classList.add("submit_state")
             const newEventName = document.querySelector("#event_name").value
@@ -289,9 +303,19 @@ export default class EventsForm {
                 userId: sessionStorage.getItem("username")
             }
 
-            APICollection.patchAPI(`http://localhost:8088/events/${selectedEventId}`, updated_event).then(
-                window.location.reload("http://localhost:8080")
-            )
+            APICollection.patchAPI(`http://localhost:8088/events/${selectedEventId}`, updated_event).then(() => {
+                document.querySelector("#events_output").innerHTML = ""
+                document.querySelector("#event_name").value = ""
+                document.querySelector("#event_date").value = ""
+                document.querySelector("#event_time").value = ""
+                document.querySelector("#event_location").value = ""
+                EventsList.buildEventsList()
+                    .then(function(eventsList) {
+                    DomManager.elementAppender(eventsList, "#events_output")
+                    let container = document.getElementById("events_list").childNodes[0]
+                    container.classList.add("prominent")
+                    })
+            })
         })
 
         return eventsForm
