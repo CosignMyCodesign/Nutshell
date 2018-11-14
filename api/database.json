@@ -11,21 +11,6 @@
       "id": 2
     },
     {
-      "username": "bob",
-      "password": "bmoney",
-      "id": 3
-    },
-    {
-      "username": "zacdude",
-      "password": "word",
-      "id": 4
-    },
-    {
-      "username": "newguy",
-      "password": "doesitwork",
-      "id": 5
-    },
-    {
       "username": "dillonWilliams",
       "password": "12345",
       "id": 6
@@ -44,13 +29,39 @@
   "messages": [
     {
       "message": "iron bowl ez win",
-      "userId": 1,
+      "userId": "ousama",
+      "date": "2018-11-14T00:40:52.054Z",
       "id": 1
     },
     {
       "message": "i love food",
-      "userId": 2,
+      "userId": "Robby",
+      "date": "2018-11-09T00:40:54.054Z",
       "id": 2
+    },
+    {
+      "message": "hey everyone",
+      "userId": "zac",
+      "date": "2018-11-12T00:40:54.054Z",
+      "id": 3
+    },
+    {
+      "message": "zac is cool",
+      "userId": "zac",
+      "date": "2018-11-13T00:40:54.054Z",
+      "id": 4
+    },
+    {
+      "message": "roll tide",
+      "userId": "ousama",
+      "date": "2018-11-14T17:11:10.353Z",
+      "id": 5
+    },
+    {
+      "message": "go cowboys",
+      "userId": "dillonWilliams",
+      "date": "2018-11-15T17:11:10.353Z",
+      "id": 6
     }
   ],
   "news": [
