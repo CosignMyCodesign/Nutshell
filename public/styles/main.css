@@ -43,8 +43,57 @@
   /* align-self: end; */
 }
 
+.site--header {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #BC5F04;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  /* text-align: center; */
+  /* padding-bottom: 20px;
+  margin-bottom: 30px */
+}
+
+.navbar li {
+  display: inline;
+  /* margin-left: 3%;
+  margin-right: 3%; */
+}
+
+.navbar ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navItem {
+  list-style-type: none;
+}
+
+.active {
+  background-color: var(--longhorn-orange);
+}
+
+li {
+
+}
+
+li:last-child {
+  border-right: none;
+}
+
+.events {
+  list-style-type: none;
+}
+
 .prominent {
   font-weight: bold;
+  padding: 20px;
+  margin-right: 40px;
+  border: 4px solid black;
+  text-align: center;
 }
 
 .submit_state > .update_event {
