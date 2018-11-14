@@ -42,10 +42,10 @@
       "message": "iron bowl ez win",
       "userId": "ousama",
       "date": "2018-11-14T00:40:52.054Z",
-      "id": 1
+      "id": 6
     },
     {
-      "message": "i love food",
+      "message": "hey bois",
       "userId": "robby",
       "date": "2018-11-09T00:40:54.054Z",
       "id": 2
@@ -57,7 +57,7 @@
       "id": 3
     },
     {
-      "message": "zac is cool",
+      "message": "i agree",
       "userId": "zac",
       "date": "2018-11-13T00:40:54.054Z",
       "id": 4
@@ -93,6 +93,22 @@
       "date": "11/14/2018",
       "userId": "ousama",
       "id": 4
+    },
+    {
+      "title": "Blizzcon Cosplay",
+      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
+      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
+      "date": "11/09/2018",
+      "userId": "billy",
+      "id": 5
+    },
+    {
+      "title": "Blizzcon Cosplay",
+      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
+      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
+      "date": "11/20/2018",
+      "userId": "billy",
+      "id": 6
     }
   ],
   "tasks": [
