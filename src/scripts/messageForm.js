@@ -6,6 +6,7 @@ import APICollection from "./apiCollection"
 import ElementBuilder from "./elementBuilder"
 import Message from "./messages";
 
+const messageDiv = document.getElementById("messages_output")
 
 
 export default class MessageForm {
@@ -44,8 +45,6 @@ export default class MessageForm {
             console.log(message)
             APICollection.postMessage(message)
         })
-
-        // on submit, post message to database
 
         // then call a (yet to be written) function to re-render message window
     }
