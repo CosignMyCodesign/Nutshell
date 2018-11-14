@@ -104,7 +104,6 @@ export default class Tasks {
         let tasksStatusUpdater = ElementBuilder.buildHTMLElement(hiddenSelector.element_type, hiddenSelector.attributes_descriptions)
         let taskNameEditor = ElementBuilder.buildHTMLElement(hiddenSelector2.element_type, hiddenSelector2.attributes_descriptions)
 
-
         taskDiv.appendChild(taskHeader)
         taskDiv.appendChild(taskParagraph)
         taskDiv.appendChild(tasksStatusUpdater)
@@ -130,8 +129,6 @@ export default class Tasks {
 
         })
         
-        
-
         taskHeader.addEventListener("click", () => {
             taskNameEditor.style.display = "inline"
             console.log("hi")
@@ -140,22 +137,16 @@ export default class Tasks {
             var key = event.which || event.keyCode
             if (key === 13) {
               console.log(taskNameEditor.value)
-                // taskNameEditor.value = this.value;
                 taskHeader.innerText = taskNameEditor.value;
                 taskNameEditor.style.display = "none";
-                // taskNameEditor.value = ""
-                // console.log(this.id)
                 const newTaskStatus = {
                     task: taskNameEditor.value
-                    // userId: this.userId,   
                 }
-                // console.log(newTaskStatus)
                 APICollection.patchAPI(`http://localhost:8088/tasks/${this.id}`, newTaskStatus)
                   .then(() => {taskHeader.appendChild(taskNameEditor)})
 
             }
         })
-
         return taskDiv
     }
 }

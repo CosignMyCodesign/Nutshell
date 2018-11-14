@@ -9,8 +9,6 @@ import LoginCollection from "./login"
 import TasksList from "./tasksList"
 import TasksForm from "./tasksForm"
 
-let get_news_list = NewsList.buildNewsList()
-console.log(get_news_list);
 EventsList.buildEventsList()
 .then(function(eventsList) {
   DomManager.elementAppender(eventsList, "#events_output")
@@ -30,8 +28,9 @@ DomManager.elementAppender(EventsForm.buildEventForm("post"),"#events_form")
 
 let get_task_list = TasksList.buildTaskList()
 console.log(get_task_list)
-
-DomManager.elementAppender(get_news_list, "#news_output")
-DomManager.elementAppender(NewsForm.buildNewsForm("post"), "#news_form")
+let get_news_list = NewsList.buildNewsList()
+console.log(get_news_list);
 DomManager.elementAppender(get_task_list, "#tasks_output")
 DomManager.elementAppender(TasksForm.buildTasksForm("post"), "#tasks_form")
+DomManager.elementAppender(get_news_list, "#news_output")
+DomManager.elementAppender(NewsForm.buildNewsForm("post"), "#news_form")

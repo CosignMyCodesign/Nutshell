@@ -24,69 +24,81 @@
       "username": "newguy",
       "password": "doesitwork",
       "id": 5
-    }
-  ],
-  "messages": [
-    {
-      "message": "iron bowl ez win",
-      "userId": 1,
-      "id": 1
     },
     {
-      "message": "i love food",
-      "userId": 2,
-      "id": 2
+      "username": "ousama",
+      "password": "ousama",
+      "id": 6
+    },
+    {
+      "username": "billy",
+      "password": "billy",
+      "id": 7
     }
   ],
+  "messages": [],
   "news": [
     {
-      "title": "It Happened",
-      "url": "http://robbyhecht.com",
-      "synopsis": "WTF, Wow",
-      "date": "11/13/2018",
-      "id": 1
+      "title": "Midterm fury fuels Trump's assault on constitutional norms",
+      "url": "https://www.cnn.com/2018/11/12/politics/trump-midterms-reaction-constitution/index.html",
+      "synopsis": "President Donald Trump is intensifying his challenge to constitutional constraints and governing norms that are already facing their gravest test since Watergate in the 1970s.",
+      "date": "11/14/2018",
+      "userId": "ousama",
+      "id": 2
+    },
+    {
+      "title": "Pokémon Let's Go! Eevee and Pikachu: The Kotaku Review",
+      "url": "https://kotaku.com/pokemon-lets-go-eevee-and-pikachu-the-kotaku-review-1830393778",
+      "synopsis": "Pokémon Let’s Go! Pikachu and Eevee are going to be divisive. The games seem meant to introduce a new generation of players to Pokémon, especially players who started with Pokémon Go. The changes made to gameplay may frustrate longtime fans, including me; I started playing in the late ‘90s and kept up with the franchise since. But I can’t bring myself to dislike Let’s Go! Eevee. Despite the changes and the modern Pokémon Go-influenced touches, the magic of Pokémon persists in Let’s Go, just by virtue of it being Pokémon.",
+      "date": "11/14/2018",
+      "userId": "billy",
+      "id": 3
     }
   ],
   "tasks": [
     {
-      "task": "hello",
+      "task": "candy",
       "date": "11/12/2018",
-      "userId": 3,
+      "userId": "ousama",
       "id": 1,
       "completed": false
     },
     {
       "task": "kjhdsfads",
       "date": "11/13/2018",
-      "userId": 3,
+      "userId": "billy",
       "id": 2,
       "completed": false
     },
     {
       "task": "test3",
       "date": "11/18/2018",
+      "userId": "billy",
       "completed": false,
       "id": 3
     },
     {
       "task": "Is userID working?",
       "date": "11/15/2018",
+      "userId": "ousama",
       "completed": false,
       "id": 4
     },
     {
       "task": "lkjdsafa",
       "date": "11/21/2018",
+      "userId": "ousama",
       "completed": true,
       "id": 5
     }
   ],
   "events": [
     {
-      "name": "Sublime",
-      "date": "2018-11-30",
-      "time": "04:20",
-      "location": "Starwood Amphitheatre",
+      "name": "Sublime Christmas",
+      "date": "2018-12-25",
+      "time": "04:21",
+      "location": "Ryman",
+      "userId": "ousama",
       "id": 2
     },
     {
@@ -94,6 +106,7 @@
       "date": "2018-11-29",
       "time": "16:05",
       "location": "prison",
+      "userId": "billy",
       "id": 3
     }
   ]

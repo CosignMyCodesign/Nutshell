@@ -221,26 +221,20 @@ export default class EventsForm {
         }
 
         let eventsForm = ElementBuilder.buildHTMLElement(formDefinition.element_type, formDefinition.attribute_descriptions)
-
         let nameFieldset = ElementBuilder.buildHTMLElement(fieldsetEventNameDefinition.element_type, fieldsetEventNameDefinition.attribute_descriptions)
         let nameLabel = ElementBuilder.buildHTMLElement(labelEventNameDefinition.element_type, labelEventNameDefinition.attribute_descriptions, labelEventNameDefinition.text_content)
         let nameInput = ElementBuilder.buildHTMLElement(inputEventNameDefinition.element_type, inputEventNameDefinition.attribute_descriptions)
-
         let dateFieldset = ElementBuilder.buildHTMLElement(fieldsetEventDateDefinition.element_type, fieldsetEventDateDefinition.attribute_descriptions)
         let dateLabel = ElementBuilder.buildHTMLElement(labelEventDateDefinition.element_type, labelEventDateDefinition.attribute_descriptions, labelEventDateDefinition.text_content)
         let dateInput = ElementBuilder.buildHTMLElement(inputEventDateDefinition.element_type, inputEventDateDefinition.attribute_descriptions)
-
         let timeFieldset = ElementBuilder.buildHTMLElement(fieldsetEventTimeDefinition.element_type, fieldsetEventTimeDefinition.attribute_descriptions)
         let timeLabel = ElementBuilder.buildHTMLElement(labelEventTimeDefinition.element_type, labelEventTimeDefinition.attribute_descriptions, labelEventTimeDefinition.text_content)
         let timeInput = ElementBuilder.buildHTMLElement(inputEventTimeDefinition.element_type, inputEventTimeDefinition.attribute_descriptions)
-
         let locationFieldset = ElementBuilder.buildHTMLElement(fieldsetEventLocationDefinition.element_type, fieldsetEventLocationDefinition.attribute_descriptions)
         let locationLabel = ElementBuilder.buildHTMLElement(labelEventLocationDefinition.element_type, labelEventLocationDefinition.attribute_descriptions, labelEventLocationDefinition.text_content)
         let locationInput = ElementBuilder.buildHTMLElement(inputEventLocationDefinition.element_type, inputEventLocationDefinition.attribute_descriptions)
-
         let submitButton = ElementBuilder.buildHTMLElement(submitButtonEventDefinition.element_type, submitButtonEventDefinition.attribute_descriptions, submitButtonEventDefinition.text_content)
         let updateButton = ElementBuilder.buildHTMLElement(updateButtonEventDefinition.element_type, updateButtonEventDefinition.attribute_descriptions, updateButtonEventDefinition.text_content)
-
         let hiddenElement = ElementBuilder.buildHTMLElement(hiddenSelector.element_type, hiddenSelector.attributes_descriptions)
 
         nameFieldset.appendChild(nameLabel)
@@ -269,7 +263,8 @@ export default class EventsForm {
                 name: newEventName,
                 date: newEventDate,
                 time: newEventTime,
-                location: newEventLocation
+                location: newEventLocation,
+                userId: sessionStorage.getItem("username")
             }
 
             APICollection.postAPI("http://localhost:8088/events", new_event).then(
@@ -290,7 +285,8 @@ export default class EventsForm {
                 name: newEventName,
                 date: newEventDate,
                 time: newEventTime,
-                location: newEventLocation
+                location: newEventLocation,
+                userId: sessionStorage.getItem("username")
             }
 
             APICollection.patchAPI(`http://localhost:8088/events/${selectedEventId}`, updated_event).then(
