@@ -29,15 +29,18 @@ export default class TaskList {
 
     let ordered_task_list = ElementBuilder.buildHTMLElement(orderedListDefinition.element_type, orderedListDefinition.attributes_descriptions)
 
-    APICollection.getAPI("http://localhost:8088/tasks").then((task) => {
-      task.forEach((todo) => {
-        let currentTask = new Tasks(todo.task, todo.date, todo.userID, todo.id)
-        let currentTaskDisplay = currentTask.buildTaskDisplay()
-
-        let listed_task = ElementBuilder.buildHTMLElement(listDefinition.element_type, listDefinition.attributes_descriptions)
-
-        listed_task.appendChild(currentTaskDisplay)
-        ordered_task_list.appendChild(listed_task)
+    APICollection.getAPI("http://localhost:8088/tasks").then((tasks) => {
+      tasks.forEach((task) => {
+        let currentTask = new Tasks(task.task, task.date, task.userId, task.id)
+        let currentUser = sessionStorage.getItem("username")
+        if(task.userId === currentUser) {
+          let currentTaskDisplay = currentTask.buildTaskDisplay()
+  
+          let listed_task = ElementBuilder.buildHTMLElement(listDefinition.element_type, listDefinition.attributes_descriptions)
+  
+          listed_task.appendChild(currentTaskDisplay)
+          ordered_task_list.appendChild(listed_task)
+        }
       })
     })
     return ordered_task_list

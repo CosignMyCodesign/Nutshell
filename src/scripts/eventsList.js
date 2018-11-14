@@ -38,24 +38,19 @@ export default class EventsList {
 
       events.forEach((event) => {
           let currentEvent = new Events(event.name, event.date, event.time, event.location, event.userId, event.id)
-          let currentEventDisplay = currentEvent.buildEventsDisplay()
-
-          let listed_event = ElementBuilder.buildHTMLElement(listDefinition.element_type, listDefinition.attributes_descriptions)
-          listed_event.appendChild(currentEventDisplay)
-          unordered_events_list.appendChild(listed_event)
+          let currentUser = sessionStorage.getItem("username")
+          if(event.userId === currentUser) {
+              let currentEventDisplay = currentEvent.buildEventsDisplay()
+    
+              let listed_event = ElementBuilder.buildHTMLElement(listDefinition.element_type, listDefinition.attributes_descriptions)
+              listed_event.appendChild(currentEventDisplay)
+              unordered_events_list.appendChild(listed_event)
+          }
       })
 
       return unordered_events_list
-
-
-      // container.classList.add("prominent")
-
-      //needs to return outside of loop so it cycles through ALL events
   })
-
-  
   }
-
 }
 
 function dateSort (a, b) {
