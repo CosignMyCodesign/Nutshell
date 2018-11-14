@@ -18,6 +18,7 @@ export default class MessagesList {
 
   static renderMessages2(array) {
     let ul = document.createElement("ul");
+    ul.id = "message_ul"
     array.forEach(element => {
       let li = document.createElement("li");
       li.className = "message";

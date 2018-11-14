@@ -22,10 +22,12 @@ export default class Message {
       })
       .then(sorted => {
         // build the ul
+        console.log(sorted)
         return MessagesList.renderMessages2(sorted);
       })
       .then(toAppend => {
         // append the ul
+        console.log(toAppend)
         MessagesList.displayMessages(toAppend);
       });
   }

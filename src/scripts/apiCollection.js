@@ -62,7 +62,7 @@ export default class APICollection {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(payload)
-        })
+        }).then(response => response.json())
     }
     static getMessages() {
         return fetch("http://localhost:8088/messages").then(response => response.json())
