@@ -1,5 +1,7 @@
 import APICollection from "./apiCollection"
 import ElementBuilder from "./elementBuilder"
+import NewsList from "./newsList"
+import DomManager from "./domManager"
 
 export default class NewsForm {
     static buildNewsForm(form_action) {
@@ -237,7 +239,8 @@ export default class NewsForm {
         newsForm.appendChild(synopsisFieldset)
         newsForm.appendChild(submitButton)
         
-        submitButton.addEventListener("click", () => {
+        submitButton.addEventListener("click", (event) => {
+            event.preventDefault()
             const newArticleTitle = document.querySelector("#article_title").value
             const newArticleURL = document.querySelector("#article_url").value
             const newArticleSynopsis = document.querySelector("#article_synopsis").value
@@ -254,9 +257,14 @@ export default class NewsForm {
                 userId: sessionStorage.getItem("username")
             }
 
-            APICollection.postAPI("http://localhost:8088/news", new_article).then(
-                window.location.reload("http://localhost:8080")
-            )
+            APICollection.postAPI("http://localhost:8088/news", new_article).then(() => {
+                document.querySelector("#news_output").innerHTML = ""
+                document.querySelector("#article_title").value = ""
+                document.querySelector("#article_url").value = ""
+                document.querySelector("#article_synopsis").value = ""
+                let get_news_list = NewsList.buildNewsList()
+                DomManager.elementAppender(get_news_list, "#news_output")
+            })
         })
 
         return newsForm

@@ -6,7 +6,7 @@ export default class APICollection {
     }
     // post
     static postAPI(url, payload) {
-        fetch(url, {
+        return fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
