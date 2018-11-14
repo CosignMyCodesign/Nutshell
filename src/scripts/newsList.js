@@ -33,7 +33,7 @@ export default class NewsList {
 
         let unordered_news_list = ElementBuilder.buildHTMLElement(unorderedListDefinition.element_type, unorderedListDefinition.attributes_descriptions)
 
-        APICollection.getAPI("http://localhost:8088/news").then((news) => {
+        APICollection.getAPI("http://localhost:8088/news?_sort=date&_order=desc").then((news) => {
             news.forEach((article) => {
                 let currentArticle = new News(article.title, article.synopsis, article.url, article.date, article.userId, article.id)
                 let currentUser = sessionStorage.getItem("username")

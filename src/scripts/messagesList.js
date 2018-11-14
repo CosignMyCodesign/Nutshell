@@ -35,16 +35,16 @@ export default class MessagesList {
       div.className = "message_div";
       
       let userHeading = document.createElement("h3")
-      userHeading.textContent = element.userId
+      userHeading.textContent = `${element.userId} says: `
       div.appendChild(userHeading)
-      
-      let userTime = document.createElement("h4")
-      userTime.textContent = element.date
-      div.appendChild(userTime)
 
       let userMessage = document.createElement("button")
       userMessage.textContent = element.message
-      div.appendChild(userMessage)
+      userHeading.appendChild(userMessage)
+      
+      // let userTime = document.createElement("h4")
+      // userTime.textContent = element.date
+      // div.appendChild(userTime)
 
       let hiddenSelector = document.createElement("input")
       hiddenSelector.textContent = "edit message"
