@@ -23,7 +23,8 @@ export default class Message {
       .then(sorted => {
         // build the ul
         console.log(sorted)
-        return MessagesList.renderMessages2(sorted);
+        // return MessagesList.renderMessages2(sorted);
+        return MessagesList.renderMessages3(sorted);
       })
       .then(toAppend => {
         // append the ul
