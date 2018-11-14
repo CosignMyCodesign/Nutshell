@@ -8,6 +8,8 @@ import APICollection from "./apiCollection";
 import LoginCollection from "./login"
 import TasksList from "./tasksList"
 import TasksForm from "./tasksForm"
+import messageForm from "./messageForm"
+import MessagesList from "./messagesList";
 
 let get_news_list = NewsList.buildNewsList()
 console.log(get_news_list);
@@ -35,3 +37,21 @@ DomManager.elementAppender(get_news_list, "#news_output")
 DomManager.elementAppender(NewsForm.buildNewsForm("post"), "#news_form")
 DomManager.elementAppender(get_task_list, "#tasks_output")
 DomManager.elementAppender(TasksForm.buildTasksForm("post"), "#tasks_form")
+
+// messages //
+
+// create form on window load
+window.onload = messageForm.msgFormCreator()
+
+APICollection.getMessages().then(msgArray => {
+    console.log(msgArray)
+    // let sortedArray = MessagesList.sortMessages2(msgArray)
+    let sortedArray = msgArray.sort(function(a,b){
+        var c = new Date(a.date);
+        var d = new Date(b.date);
+        return c-d;
+        });
+    console.log(sortedArray)
+    // sort the array, most recent messages are LAST
+    // render function takes that output
+})

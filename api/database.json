@@ -6,22 +6,22 @@
       "id": 1
     },
     {
-      "username": "kazathur92",
-      "password": "woopy",
+      "username": "alfonso",
+      "password": "gify",
       "id": 2
     },
     {
-      "username": "bob",
-      "password": "bmoney",
+      "username": "ousama",
+      "password": "auburn",
       "id": 3
     },
     {
-      "username": "zacdude",
-      "password": "word",
+      "username": "dillon",
+      "password": "houstons",
       "id": 4
     },
     {
-      "username": "newguy",
+      "username": "robby",
       "password": "doesitwork",
       "id": 5
     }
@@ -29,13 +29,33 @@
   "messages": [
     {
       "message": "iron bowl ez win",
-      "userId": 1,
+      "userId": "ousama",
+      "date": "2018-11-14T00:40:52.054Z",
       "id": 1
     },
     {
       "message": "i love food",
-      "userId": 2,
+      "userId": "robby",
+      "date": "2018-11-09T00:40:54.054Z",
       "id": 2
+    },
+    {
+      "message": "hey everyone",
+      "userId": "zac",
+      "date": "2018-11-12T00:40:54.054Z",
+      "id": 3
+    },
+    {
+      "message": "zac is cool",
+      "userId": "zac",
+      "date": "2018-11-13T00:40:54.054Z",
+      "id": 4
+    },
+    {
+      "message": "hey there",
+      "userId": "zac",
+      "date": "2018-11-14T00:40:54.054Z",
+      "id": 5
     }
   ],
   "news": [
@@ -53,7 +73,7 @@
       "date": "11/12/2018",
       "userId": 3,
       "id": 1,
-      "completed": true
+      "completed": false
     },
     {
       "task": "kjhdsfads",

@@ -6,9 +6,9 @@ import ElementBuilder from "./elementBuilder"
 import APICollection from "./apiCollection"
 
 export default class Message {
-    constructor(message, userId, id) {
+    constructor(message, userId, date) {
         this.message = message
         this.userId = userId
-        this.id = id
+        this.date = date
     }
 }

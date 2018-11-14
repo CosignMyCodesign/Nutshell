@@ -55,4 +55,16 @@ export default class APICollection {
             body: JSON.stringify(payload)
         })
     }
+    static postMessage(payload) {
+        return fetch("http://localhost:8088/messages", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        })
+    }
+    static getMessages() {
+        return fetch("http://localhost:8088/messages").then(response => response.json())
+    }
 }
