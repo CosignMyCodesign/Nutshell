@@ -27,7 +27,7 @@ export default class Messages2 {
         }
         let messageNameDefinition = {
             "element_type": "button",
-            "text_content": `${this.userId} says... ${this.message}`,
+            "text_content": `${this.message}`,
             "attribute_descriptions": [{
                 "attribute_name": "class",
                 "attribute_value": `message_${this.id}`

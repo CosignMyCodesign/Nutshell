@@ -36,16 +36,12 @@ export default class MessagesList2 {
         APICollection.getAPI("http://localhost:8088/messages?_sort=date&_order=desc").then((messages) => {
             messages.forEach((message) => {
                 let currentMessage = new Messages2(message.message, message.date, message.userId, message.id)
-                let currentUser = sessionStorage.getItem("username")
-                if(message.userId === currentUser) {
-                    let currentMessageDisplay = currentMessage.buildMessageDisplay()
-    
-                    let listed_message = ElementBuilder.buildHTMLElement(listDefinition.element_type, listDefinition.attributes_descriptions)
-                    listed_message.appendChild(currentMessageDisplay)
-                    unordered_messages_list.appendChild(listed_message)
-                }
+                let currentMessageDisplay = currentMessage.buildMessageDisplay()
+
+                let listed_message = ElementBuilder.buildHTMLElement(listDefinition.element_type, listDefinition.attributes_descriptions)
+                listed_message.appendChild(currentMessageDisplay)
+                unordered_messages_list.appendChild(listed_message)
             })
-            //needs to return outside of loop so it cycles through ALL articles
         })
         return unordered_messages_list
     }

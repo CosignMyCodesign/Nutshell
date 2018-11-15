@@ -45,7 +45,6 @@ export default class NewsList {
                     unordered_news_list.appendChild(listed_article)
                 }
             })
-            //needs to return outside of loop so it cycles through ALL articles
         })
         return unordered_news_list
     }

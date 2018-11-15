@@ -37,7 +37,7 @@ const loginFormFactory = () => {
   user_label.innerHTML = "Username";
 
   let pass_field = document.createElement("input");
-  pass_field.setAttribute("type", "text");
+  pass_field.setAttribute("type", "password");
   pass_field.id = "password";
   let pass_label = document.createElement("label");
   pass_label.innerHTML = "Password";
