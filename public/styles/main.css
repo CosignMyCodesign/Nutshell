@@ -24,11 +24,11 @@ body {
   margin: 10px;
   width: 50%;
 }
-
-/* .form_output {
+/* 
+.form_output {
     border: 1px blue solid;
-} */
-/*
+}
+
 .form_input {
     border: 1px red solid;
 } */
@@ -97,21 +97,8 @@ body {
   color: #BC5F04;
 }
 
-li:last-child {
-  border-right: none;
-}
-
 .events {
   list-style-type: none;
-}
-
-.prominent {
-  font-weight: bold;
-  padding: 20px;
-  margin-right: 40px;
-  border: 4px solid black;
-  text-align: center;
-  background-color: antiquewhite;
 }
 
 .submit_state > .update_event {
@@ -188,6 +175,15 @@ button:hover {
 button:active {
 	position:relative;
 	top:1px;
+}
+
+.prominent {
+  font-weight: bold;
+  padding: 20px;
+  margin-right: 40px;
+  border: 4px solid var(--darkest-red);
+  text-align: center;
+  background-color: antiquewhite;
 }
 
 
