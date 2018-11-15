@@ -22,6 +22,7 @@ const logout = document.getElementById("logout");
 logout.addEventListener("click", e => {
   LoginCollection.logout();
   console.log("You've been logged out. Thanks for using Nutshell!");
+  window.location.reload("http://localhost:8088/")
 //   messageDiv.innerText = "You've been logged out. Thanks for using Nutshell!"
 });
 
@@ -37,7 +38,7 @@ const loginFormFactory = () => {
   user_label.innerHTML = "Username";
 
   let pass_field = document.createElement("input");
-  pass_field.setAttribute("type", "text");
+  pass_field.setAttribute("type", "password");
   pass_field.id = "password";
   let pass_label = document.createElement("label");
   pass_label.innerHTML = "Password";
@@ -68,6 +69,7 @@ document.getElementById("login_form_button").addEventListener("click", e => {
       })
       .then(data => {
         clearFields();
+        window.location.reload("http://localhost:8088/")
       });
   });
 });
@@ -111,11 +113,10 @@ document.getElementById("registration_forms").addEventListener("click", e => {
       })
       .then(data => {
         clearFields();
+        window.location.reload("http://localhost:8088/")
       });
   });
 });
-
-
 
 // class to handle all login/registration/logout interactions
 export default class LoginCollection {

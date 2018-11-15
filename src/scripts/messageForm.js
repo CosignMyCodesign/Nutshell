@@ -43,7 +43,7 @@ export default class MessageForm {
             let body = document.getElementById("message_body").value
             let message = new Message(body, sessionStorage.getItem("username"), currDate)
             // post message to database, clear out div, re-render
-            APICollection.postMessage(message).then(MessagesList.clearDiv()).then(Message.messageMaster())
+            APICollection.postMessage(message)
             // APICollection.postMessage(message).then(response => {
             //     // let li = document.createElement("li")
             //     // li.id = "message"

@@ -30,50 +30,32 @@
     {
       "message": "war eagle",
       "userId": "ousama",
-      "date": "2018-11-14T17:35:24.298Z",
+      "date": "11/05/2018",
       "id": 1
-    },
-    {
-      "message": "iron bowl ez win",
-      "userId": "ousama",
-      "date": "2018-11-14T00:40:52.054Z",
-      "id": 6
     },
     {
       "message": "hey everyone",
       "userId": "zac",
-      "date": "2018-11-12T00:40:54.054Z",
+      "date": "11/07/2018",
       "id": 3
     },
     {
       "message": "i agree",
       "userId": "zac",
-      "date": "2018-11-13T00:40:54.054Z",
+      "date": "11/08/2018",
       "id": 4
     },
     {
-      "message": "roll tide",
+      "message": "IM TIREd",
+      "date": "11/16/2018",
       "userId": "ousama",
-      "date": "2018-11-14T17:11:10.353Z",
       "id": 5
     },
     {
-      "message": "go cowboys",
-      "userId": "dillonWilliams",
-      "date": "2018-11-15T17:11:10.353Z",
+      "message": "pizza",
+      "date": "2018-11-15T03:34:05.997Z",
+      "userId": "ousama",
       "id": 6
-    },
-    {
-      "message": "zac",
-      "userId": "zac",
-      "date": "2018-11-14T22:58:37.452Z",
-      "id": 7
-    },
-    {
-      "message": "zac",
-      "userId": "zac",
-      "date": "2018-11-14T22:58:43.116Z",
-      "id": 8
     }
   ],
   "news": [
@@ -101,252 +83,20 @@
       "id": 3
     },
     {
-      "title": "Amazon’s $150,000 Jobs Herald New Era Tripling Nashville Incomes",
-      "url": "https://www.bloomberg.com/amp/news/articles/2018-11-13/amazon-s-pick-for-operations-center-adds-to-nashville-hot-streak",
-      "synopsis": "Music City is set to continue its multiyear boom after landing a 5,000-person operations center from Amazon.com Inc.  The Internet giant will become one of Nashville, Tennessee’s biggest employers with news Tuesday that Amazon will open a $230 million facility in downtown, with average wages more than $150,000 -- or triple the city’s median household income. While its Amazon haul pales in comparison to the 25,000 jobs bound for each of New York and Arlington, Virginia, its presence could affect life in Nashville almost as much on a relative basis.",
+      "title": "Pokémon Let's Go! Eevee and Pikachu: The Kotaku Review",
+      "url": "https://kotaku.com/pokemon-lets-go-eevee-and-pikachu-the-kotaku-review-1830393778",
+      "synopsis": "Pokémon Let’s Go! Pikachu and Eevee are going to be divisive. The games seem meant to introduce a new generation of players to Pokémon, especially players who started with Pokémon Go. The changes made to gameplay may frustrate longtime fans, including me; I started playing in the late ‘90s and kept up with the franchise since. But I can’t bring myself to dislike Let’s Go! Eevee. Despite the changes and the modern Pokémon Go-influenced touches, the magic of Pokémon persists in Let’s Go, just by virtue of it being Pokémon.",
       "date": "11/14/2018",
-      "userId": "dillonWilliams",
-      "id": 4
+      "userId": "ousama",
+      "id": 7
     },
     {
       "title": "Blizzcon Cosplay",
       "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
       "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/09/2018",
-      "userId": "billy",
-      "id": 5
-    },
-    {
-      "title": "Blizzcon Cosplay",
-      "url": "https://cosplay.kotaku.com/blizzcon-2018s-cosplay-was-out-of-control-1830371910",
-      "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
-      "date": "11/20/2018",
-      "userId": "billy",
-      "id": 6
+      "date": "11/14/2018",
+      "userId": "ousama",
+      "id": 8
     }
   ],
   "tasks": [
@@ -405,6 +155,13 @@
       "completed": false,
       "userId": "Robby",
       "id": 7
+    },
+    {
+      "task": "Feed Dogs",
+      "date": "11/14/2018",
+      "completed": false,
+      "userId": "ousama",
+      "id": 8
     }
   ],
   "events": [
@@ -447,12 +204,28 @@
       "id": 6
     },
     {
-      "name": "Color Me Badd",
-      "date": "2018-11-16",
-      "time": "12:00",
-      "location": "my porch",
-      "userId": null,
+      "name": "Go Home",
+      "date": "2018-11-14",
+      "time": "23:00",
+      "location": "Home",
+      "userId": "ousama",
       "id": 7
+    },
+    {
+      "name": "Go to Class",
+      "date": "2018-11-15",
+      "time": "08:30",
+      "location": "NSS",
+      "userId": "ousama",
+      "id": 8
+    },
+    {
+      "name": "Boyz II Men",
+      "date": "2018-11-30",
+      "time": "04:02",
+      "location": "Cafe Coco",
+      "userId": "Robby",
+      "id": 9
     }
   ]
 }
