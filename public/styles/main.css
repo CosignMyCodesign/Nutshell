@@ -179,6 +179,10 @@ button:active {
 	top:1px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 
 #navBar {}
 
