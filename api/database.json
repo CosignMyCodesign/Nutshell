@@ -30,50 +30,44 @@
     {
       "message": "war eagle",
       "userId": "ousama",
-      "date": "2018-11-14T17:35:24.298Z",
+      "date": "11/05/2018",
       "id": 1
-    },
-    {
-      "message": "iron bowl ez win",
-      "userId": "ousama",
-      "date": "2018-11-14T00:40:52.054Z",
-      "id": 6
     },
     {
       "message": "hey everyone",
       "userId": "zac",
-      "date": "2018-11-12T00:40:54.054Z",
+      "date": "11/07/2018",
       "id": 3
     },
     {
       "message": "i agree",
       "userId": "zac",
-      "date": "2018-11-13T00:40:54.054Z",
+      "date": "11/08/2018",
       "id": 4
     },
     {
-      "message": "roll tide",
+      "message": "f",
+      "date": "11/10/2018",
       "userId": "ousama",
-      "date": "2018-11-14T17:11:10.353Z",
-      "id": 5
-    },
-    {
-      "message": "go cowboys",
-      "userId": "dillonWilliams",
-      "date": "2018-11-15T17:11:10.353Z",
       "id": 6
     },
     {
-      "message": "zac",
-      "userId": "zac",
-      "date": "2018-11-14T22:58:37.452Z",
+      "message": "beep",
+      "date": "11/29/2018",
+      "userId": "ousama",
       "id": 7
     },
     {
-      "message": "zac",
-      "userId": "zac",
-      "date": "2018-11-14T22:58:43.116Z",
+      "message": "poop",
+      "date": "11/22/2018",
+      "userId": "ousama",
       "id": 8
+    },
+    {
+      "message": "RELAX TANNER ILL LEAVE",
+      "date": "11/14/2018",
+      "userId": "ousama",
+      "id": 9
     }
   ],
   "news": [
@@ -347,6 +341,14 @@
       "date": "11/20/2018",
       "userId": "billy",
       "id": 6
+    },
+    {
+      "title": "Pokémon Let's Go! Eevee and Pikachu: The Kotaku Review",
+      "url": "https://kotaku.com/pokemon-lets-go-eevee-and-pikachu-the-kotaku-review-1830393778",
+      "synopsis": "Pokémon Let’s Go! Pikachu and Eevee are going to be divisive. The games seem meant to introduce a new generation of players to Pokémon, especially players who started with Pokémon Go. The changes made to gameplay may frustrate longtime fans, including me; I started playing in the late ‘90s and kept up with the franchise since. But I can’t bring myself to dislike Let’s Go! Eevee. Despite the changes and the modern Pokémon Go-influenced touches, the magic of Pokémon persists in Let’s Go, just by virtue of it being Pokémon.",
+      "date": "11/14/2018",
+      "userId": "ousama",
+      "id": 7
     }
   ],
   "tasks": [
@@ -405,6 +407,27 @@
       "completed": false,
       "userId": "Robby",
       "id": 7
+    },
+    {
+      "task": "Get Madi Ring",
+      "date": "11/15/2018",
+      "completed": false,
+      "userId": "ousama",
+      "id": 8
+    },
+    {
+      "task": "Tanner Buys Ring",
+      "date": "11/15/2018",
+      "completed": false,
+      "userId": "ousama",
+      "id": 9
+    },
+    {
+      "task": "banana",
+      "date": "11/24/2018",
+      "completed": false,
+      "userId": "ousama",
+      "id": 10
     }
   ],
   "events": [
@@ -445,6 +468,22 @@
       "location": "Lawrenceburg, TN",
       "userId": "dillonWilliams",
       "id": 6
+    },
+    {
+      "name": "Go To Tanner's",
+      "date": "2018-11-16",
+      "time": "01:22",
+      "location": "Kira's Face",
+      "userId": "ousama",
+      "id": 7
+    },
+    {
+      "name": "Sublime Christmas",
+      "date": "2018-11-15",
+      "time": "02:00",
+      "location": "Ryman",
+      "userId": "ousama",
+      "id": 8
     }
   ]
 }
