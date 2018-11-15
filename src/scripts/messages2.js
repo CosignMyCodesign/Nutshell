@@ -33,14 +33,14 @@ export default class Messages2 {
                 "attribute_value": `message_${this.id}`
             }]
         }
-        let paragraphDefinition = {
-            "element_type": "p",
-            "text_content": `Post Date: ${this.date}`,
-            "attribute_descriptions": [{
-                "attribute_name": "class",
-                "attribute_value": "date"
-            }]
-        }
+        // let paragraphDefinition = {
+        //     "element_type": "p",
+        //     "text_content": `Post Date: ${this.date}`,
+        //     "attribute_descriptions": [{
+        //         "attribute_name": "class",
+        //         "attribute_value": "date"
+        //     }]
+        // }
         let hiddenSelector = {
             "element_type": "input",
             "attributes_descriptions": [{
@@ -77,13 +77,13 @@ export default class Messages2 {
         let messageDiv = ElementBuilder.buildHTMLElement(messageDivDefinition.element_type, messageDivDefinition.attribute_descriptions)
         let otherMessageHeader = ElementBuilder.buildHTMLElement(messageHeaderDefinition.element_type, messageHeaderDefinition.attribute_descriptions, messageHeaderDefinition.text_content)
         let messageHeader = ElementBuilder.buildHTMLElement(messageNameDefinition.element_type, messageNameDefinition.attribute_descriptions, messageNameDefinition.text_content)
-        let messageParagraph = ElementBuilder.buildHTMLElement(paragraphDefinition.element_type, paragraphDefinition.attribute_descriptions, paragraphDefinition.text_content)
+        // let messageParagraph = ElementBuilder.buildHTMLElement(paragraphDefinition.element_type, paragraphDefinition.attribute_descriptions, paragraphDefinition.text_content)
         let messageStatusUpdate = ElementBuilder.buildHTMLElement(hiddenSelector.element_type, hiddenSelector.attributes_descriptions)
         let messageNameEditor = ElementBuilder.buildHTMLElement(hiddenSelector2.element_type, hiddenSelector2.attributes_descriptions)
 
         messageDiv.appendChild(otherMessageHeader)
         messageDiv.appendChild(messageHeader)
-        messageDiv.appendChild(messageParagraph)
+        // messageDiv.appendChild(messageParagraph)
         messageDiv.appendChild(messageStatusUpdate)
         messageHeader.appendChild(messageNameEditor)
         

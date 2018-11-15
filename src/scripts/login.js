@@ -115,8 +115,6 @@ document.getElementById("registration_forms").addEventListener("click", e => {
   });
 });
 
-
-
 // class to handle all login/registration/logout interactions
 export default class LoginCollection {
   constructor(username, password) {

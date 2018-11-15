@@ -109,29 +109,29 @@ export default class MessagesForm2 {
     let messageSubmitButton = ElementBuilder.buildHTMLElement(submitButtonDefinition.element_type, submitButtonDefinition.attribute_descriptions, submitButtonDefinition.text_content)
     messageTitleFieldset.appendChild(messageTitleLabel)
     messageTitleFieldset.appendChild(messageTitleInput)
-    messageDateFieldset.appendChild(messageDateLabel)
+    // messageDateFieldset.appendChild(messageDateLabel)
     messageDateFieldset.appendChild(messageDateInput)
 
     messageForm.appendChild(messageTitleFieldset)
-    messageForm.appendChild(messageDateFieldset)
+    // messageForm.appendChild(messageDateFieldset)
     messageForm.appendChild(messageSubmitButton)
 
     messageSubmitButton.addEventListener("click", (event) => {
       event.preventDefault()
       const newMessageTitle = document.querySelector("#message_title").value
-      const newMessageDate = document.querySelector("#message_date").value.split("-")
-      const formattedMessageDate = `${newMessageDate[1]}/${newMessageDate[2]}/${newMessageDate[0]}`
+      // const newMessageDate = document.querySelector("#message_date").value.split("-")
+      // const formattedMessageDate = `${newMessageDate[1]}/${newMessageDate[2]}/${newMessageDate[0]}`
 
       const new_message = {
         message: newMessageTitle,
-        date: formattedMessageDate,
+        date: new Date(),
         userId: sessionStorage.getItem("username")
       }
 
       APICollection.postAPI("http://localhost:8088/messages", new_message).then(() => {
         document.querySelector("#messages_output").innerHTML = ""
         document.querySelector("#message_title").value = ""
-        document.querySelector("#message_date").value = ""
+        // document.querySelector("#message_date").value = ""
         let get_messages2_list = MessagesList2.buildMessagesList()
         DomManager.elementAppender(get_messages2_list, "#messages_output")
       })
