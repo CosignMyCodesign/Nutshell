@@ -22,6 +22,7 @@ const logout = document.getElementById("logout");
 logout.addEventListener("click", e => {
   LoginCollection.logout();
   console.log("You've been logged out. Thanks for using Nutshell!");
+  window.location.reload("http://localhost:8088/")
 //   messageDiv.innerText = "You've been logged out. Thanks for using Nutshell!"
 });
 
@@ -68,6 +69,7 @@ document.getElementById("login_form_button").addEventListener("click", e => {
       })
       .then(data => {
         clearFields();
+        window.location.reload("http://localhost:8088/")
       });
   });
 });
@@ -111,6 +113,7 @@ document.getElementById("registration_forms").addEventListener("click", e => {
       })
       .then(data => {
         clearFields();
+        window.location.reload("http://localhost:8088/")
       });
   });
 });

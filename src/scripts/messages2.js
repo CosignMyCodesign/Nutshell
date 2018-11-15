@@ -88,8 +88,10 @@ export default class Messages2 {
         messageHeader.appendChild(messageNameEditor)
         
         messageHeader.addEventListener("click", () => {
-            messageNameEditor.style.display = "inline"
-            console.log("hi")
+            let currentUser = sessionStorage.getItem("username")
+            if(currentUser === this.userId) {
+                messageNameEditor.style.display = "inline"
+            }
         })
         messageNameEditor.addEventListener("keypress", (event) => {
             var key = event.which || event.keyCode
