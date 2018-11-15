@@ -18,8 +18,10 @@ export default class MessageForm {
         form.id = "msgForm"
 
         // create field to hold message body
-        let msgBodyField = document.createElement("input")
-        msgBodyField.setAttribute("type", "text")
+        let msgBodyField = document.createElement("textarea")
+        msgBodyField.setAttribute("rows", "10")
+        msgBodyField.setAttribute("cols", "50")
+        msgBodyField.setAttribute("style", "resize:none")
         msgBodyField.id = "message_body"
         // append to form
         form.appendChild(msgBodyField)

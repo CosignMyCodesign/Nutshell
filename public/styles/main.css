@@ -10,10 +10,25 @@ font-family: 'Oranienbaum', serif; */
   --longhorn-orange: #A44200;
 }
 
-/* .form_output {
+body {
+  background-color: rgb(252, 222, 193)
+}
+
+#login_output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login_output button {
+  margin: 10px;
+  width: 50%;
+}
+/* 
+.form_output {
     border: 1px blue solid;
-} */
-/*
+}
+
 .form_input {
     border: 1px red solid;
 } */
@@ -34,7 +49,7 @@ font-family: 'Oranienbaum', serif; */
 }
 
 .form_output {
-  border: 1px black solid;
+  /* border: 1px black solid; */
   height: 100vh;
   grid-area: a;
   overflow: auto;
@@ -42,7 +57,7 @@ font-family: 'Oranienbaum', serif; */
 }
 
 .form_input {
-  border: 1px black solid;
+  border-left: 3px solid var(--darkest-red);
   height: 100vh;
   grid-area: b;
   /* align-self: end; */
@@ -82,21 +97,8 @@ font-family: 'Oranienbaum', serif; */
   color: #BC5F04;
 }
 
-li:last-child {
-  border-right: none;
-}
-
 .events {
   list-style-type: none;
-}
-
-.prominent {
-  font-weight: bold;
-  padding: 20px;
-  margin-right: 40px;
-  border: 4px solid black;
-  text-align: center;
-  background-color: antiquewhite;
 }
 
 .submit_state > .update_event {
@@ -122,10 +124,6 @@ fieldset {
   /* margin-top: 10px;
   margin-bottom: 20px; */
   padding: 20px;
-}
-
-body {
-  background-color: rgb(252, 222, 193)
 }
 
 /* Makes the input fields centered and the same width */
@@ -177,6 +175,15 @@ button:hover {
 button:active {
 	position:relative;
 	top:1px;
+}
+
+.prominent {
+  font-weight: bold;
+  padding: 20px;
+  margin-right: 40px;
+  border: 4px solid var(--darkest-red);
+  text-align: center;
+  background-color: antiquewhite;
 }
 
 ul {
