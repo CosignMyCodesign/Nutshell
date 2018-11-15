@@ -13,17 +13,17 @@
     {
       "username": "dillonWilliams",
       "password": "12345",
-      "id": 6
+      "id": 3
     },
     {
       "username": "Robby",
       "password": "Hello",
-      "id": 7
+      "id": 4
     },
     {
       "username": "ousama",
       "password": "ousama",
-      "id": 8
+      "id": 5
     }
   ],
   "messages": [
@@ -34,13 +34,19 @@
       "id": 1
     },
     {
+      "message": "ROLL TIDE",
+      "userId": "zac",
+      "date": "11/07/2018",
+      "id": 2
+    },
+    {
       "message": "hey everyone",
       "userId": "zac",
       "date": "11/07/2018",
       "id": 3
     },
     {
-      "message": "i agree",
+      "message": "zac is cool",
       "userId": "zac",
       "date": "11/08/2018",
       "id": 4
@@ -58,27 +64,80 @@
       "id": 6
     },
     {
-      "message": "whaaaaat?",
-      "date": "2018-11-15T04:42:08.651Z",
-      "userId": "Robby",
+      "message": "acorns or peanuts?",
+      "date": "2018-11-15T05:06:02.753Z",
+      "userId": "dillonWilliams",
       "id": 7
+    },
+    {
+      "message": "Really I prefer cashews..but they aren't sold in the shell..",
+      "date": "2018-11-15T05:07:41.123Z",
+      "userId": "dillonWilliams",
+      "id": 8
+    },
+    {
+      "message": "Have you ever seen a cashew in a shell? Now that is a weird Nutshell",
+      "date": "2018-11-15T05:08:40.298Z",
+      "userId": "dillonWilliams",
+      "id": 9
+    },
+    {
+      "message": "Dillon, go to bed...It's late",
+      "date": "2018-11-15T05:09:54.728Z",
+      "userId": "zac",
+      "id": 10
+    },
+    {
+      "message": "I wonder what Alfonso is up to",
+      "date": "2018-11-15T05:10:35.650Z",
+      "userId": "ousama",
+      "id": 11
+    },
+    {
+      "message": "I just sent my 486th giphy of the day. I'm going for the record boys",
+      "date": "2018-11-15T05:12:07.798Z",
+      "userId": "kazathur92",
+      "id": 12
+    },
+    {
+      "message": "But honestly, I think this app will really help people open up more",
+      "date": "2018-11-15T05:17:06.418Z",
+      "userId": "kazathur92",
+      "id": 13
+    },
+    {
+      "message": "Yeah, maybe they will come out of their....nutshell",
+      "date": "2018-11-15T05:18:08.459Z",
+      "userId": "ousama",
+      "id": 14
+    },
+    {
+      "message": "I just googled cashew shells...whoa",
+      "date": "2018-11-15T05:20:38.858Z",
+      "userId": "Robby",
+      "id": 15
+    },
+    {
+      "message": "Robby, why are you still showing as connected to my Wifi? You guys haven't been here since Friday..",
+      "date": "2018-11-15T05:34:28.726Z",
+      "userId": "ousama",
+      "id": 16
+    },
+    {
+      "message": "*crickets*",
+      "date": "2018-11-15T05:34:54.766Z",
+      "userId": "Robby",
+      "id": 17
     }
   ],
   "news": [
-    {
-      "title": "It Happened",
-      "url": "http://robbyhecht.com",
-      "synopsis": "WTF, Wow",
-      "date": "11/13/2018",
-      "id": 1
-    },
     {
       "title": "Improved Measurements Might Unveil Unknown 95 Percent Of Universe’s Building Blocks",
       "url": "https://www.eurasiareview.com/13112018-improved-measurements-might-unveil-unknown-95-percent-of-universes-building-blocks/",
       "synopsis": "Only five percent of the substances that make up our visible universe and everything around us are provisionally understood and described by science. CERN is the world’s largest particle physics test facility. Here, on the outskirts of Geneva, researches look for the remaining 95 percent of the universe’s substances by beaming particles against one other in collisions that create a type of ‘mini-Big Bang ‘.",
       "date": "11/14/2018",
       "userId": "dillonWilliams",
-      "id": 2
+      "id": 1
     },
     {
       "title": "Leighton Vander Esch named NFC Defensive Player of the Week",
@@ -86,7 +145,7 @@
       "synopsis": "Those who didn't know how impactful the rookie linebacker had been for the Dallas Cowboys this season got an eye-full when the bright lights of Sunday Night Football came on, facing the Philadelphia Eagles in a must-win scenario without All-Pro linebacker Sean Lee in tow. It's the fourth game Lee has missed this season with nagging hamstring injuries, and it won't be his last, his absence predicted to stretch upwards of six weeks. If that holds firm, he'll end up having been sidelined nine of 16 regular season games, a keen reminder of why the Cowboys selected Vander Esch with the 19th-overall pick in the first place.",
       "date": "11/14/2018",
       "userId": "dillonWilliams",
-      "id": 3
+      "id": 2
     },
     {
       "title": "Pokémon Let's Go! Eevee and Pikachu: The Kotaku Review",
@@ -94,7 +153,7 @@
       "synopsis": "Pokémon Let’s Go! Pikachu and Eevee are going to be divisive. The games seem meant to introduce a new generation of players to Pokémon, especially players who started with Pokémon Go. The changes made to gameplay may frustrate longtime fans, including me; I started playing in the late ‘90s and kept up with the franchise since. But I can’t bring myself to dislike Let’s Go! Eevee. Despite the changes and the modern Pokémon Go-influenced touches, the magic of Pokémon persists in Let’s Go, just by virtue of it being Pokémon.",
       "date": "11/14/2018",
       "userId": "ousama",
-      "id": 7
+      "id": 3
     },
     {
       "title": "Blizzcon Cosplay",
@@ -102,7 +161,79 @@
       "synopsis": "Other shows might be bigger, but every year Blizzcon brings out the absolute best in cosplay.",
       "date": "11/14/2018",
       "userId": "ousama",
+      "id": 4
+    },
+    {
+      "title": "Why Coding Is Still The Most Important Job Skill Of The Future",
+      "url": "https://www.fastcompany.com/3060883/why-coding-is-the-job-skill-of-the-future-for-everyone",
+      "synopsis": "Apart from companies in the technology sector, there are an increasing number of businesses relying on computer code. No wonder that eight of the top 25 jobs this year are tech positions, according to Glassdoor. A software engineer could just as easily find themselves working at Apple, as they could in a hospital, or at an automotive manufacturer.",
+      "date": "11/14/2018",
+      "userId": "dillonWilliams",
+      "id": 5
+    },
+    {
+      "title": "Song Premiere: Robby Hecht & Caroline Spence, 'All on the Table'",
+      "url": "https://www.tennessean.com/story/entertainment/music/2018/05/16/robby-hecht-carolina-spence-premiere-all-table/614671002/",
+      "synopsis": "Singer-songwriters Robby Hecht and Caroline Spence are both based in Nashville, but their first meeting took place 1,200 miles away from Music City, at the Rocky Mountain Folks Festival in 2013.",
+      "date": "11/14/2018",
+      "userId": "Robby",
+      "id": 6
+    },
+    {
+      "title": "Holiday Gift Guide 2018: The Best Tea Gift Sets",
+      "url": "https://www.forbes.com/sites/megykarydes/2018/11/13/holiday-gift-guide-2018-the-best-tea-gift-sets/amp/",
+      "synopsis": "Tea time is a treasured ritual for many of us. Whether enjoying it in the morning, “British-style” as my son lovingly prefers his, or in the afternoon, tea time can really be any time of the day or year. During the holidays, though, it feels like those warms drinks, especially tea and coffee, take on a special place in our lives as we seek ways to unwind or relax. For your clients, friends and loved ones who appreciate their teas, here are 10 tea gift sets to share with them.",
+      "date": "11/14/2018",
+      "userId": "Robby",
+      "id": 7
+    },
+    {
+      "title": "5 ways hackers attack you (and how to counter them)",
+      "url": "https://www.usatoday.com/story/tech/columnist/komando/2013/07/19/hacker-attack-trojan-horse-drive-by-downloads-passwords/2518053/",
+      "synopsis": "Right now, millions of hackers, spammers and scammers are hard at work. They're after your Social Security number, bank account information and social media accounts. With any of these, they can steal your money or trick your friends into giving up theirs.  The scary part is that anyone can be a hacker. For as little as $3,000, you can buy a complete and fully operational exploit kit. This kit does most of the illegal work for you automatically. You get to sit back and rake in the cash, until you get caught.",
+      "date": "11/14/2018",
+      "userId": "ousama",
       "id": 8
+    },
+    {
+      "title": "Giphy unveils its short-form video platform",
+      "url": "https://www.engadget.com/2018/11/09/giphy-video-film-fest-short-form/",
+      "synopsis": "Giphy is again moving beyond the traditional confines of everyone's favorite animated image format, the GIF. The company is soft launching its video platform Friday, which showcases the 118 finalist videos from the first Giphy Film Fest, held earlier this week.  The Film Fest videos slot into various categories, including narrative, stop-motion, animated and experimental. All of the entrants had 18 seconds to tell their stories, but the time constraint on Giphy's video platform is a little more relaxed -- it hosts videos lasting up to 30 seconds. As with Vine (and, of course, GIFs), you can loop the videos.",
+      "date": "11/14/2018",
+      "userId": "kazathur92",
+      "id": 9
+    },
+    {
+      "title": "The Copyright Law Behind a $600M Startup and Millennials' Favorite Form of Expression",
+      "url": "http://fortune.com/2016/11/07/giphy-gifs-copyright/",
+      "synopsis": "Even if you haven’t heard of Giphy, which raised another $72 million last week, you’ve definitely encountered it. It’s the go-to site for those looping animated clips called GIFs that surfaces everything from dancing cats to touchdown celebrations to President Barack Obama waving a lightsaber.",
+      "date": "11/14/2018",
+      "userId": "kazathur92",
+      "id": 10
+    },
+    {
+      "title": "The 18-Second Oscars? The Giphy Film Fest to Award $10,000 to Winning GIF Artisan",
+      "url": "https://variety.com/2018/digital/news/giphy-film-fest-10000-prize-gif-creators-1202905835/",
+      "synopsis": "Giphy wants to elevate the humble GIF from meme-factory punchlines into… well, works of art.  The GIF search-engine startup has unveiled the Giphy Film Fest to celebrate “micro-film” creators, offering one grand-prize winner a $10,000 cash prize as well as a five-year website-hosting subscription from sponsor Squarespace.",
+      "date": "11/14/2018",
+      "userId": "kazathur92",
+      "id": 11
+    },
+    {
+      "title": "Becoming The Kind Of Leader You Would Want To Follow",
+      "url": "https://www.forbes.com/sites/brettsteenbarger/2016/04/09/becoming-the-kind-of-leader-you-would-want-to-follow/",
+      "synopsis": "Brian Tracy posed a pointed question: \"Are you the kind of leader you would want to follow?\" Amazingly, in many cases, the answer appears to be no.  Dr. Nico Rose does a great job of curating interesting news from the world of positive psychology and came up with this gem: When managers were asked about the areas of performance they wanted to improve, they generally cited technology and finance. When their employees were polled about areas for manager improvement, they overwhelmingly cited leadership and emotional intelligence. In other words, managers wanted to improve their instrumental skills and figure out better ways of getting things done. Employees wanted managers to improve their expressive skills: how they interacted in a team context.",
+      "date": "11/14/2018",
+      "userId": "zac",
+      "id": 12
+    },
+    {
+      "title": "The Best Nuts to Eat  ",
+      "url": "https://www.ranker.com/crowdranked-list/the-best-nuts-",
+      "synopsis": "List of the best nuts to eat, ranked by snackers everywhere. This list includes the best tasting and healthiest nuts, a favorite snack among young and old alike. According to a new scientific study, nuts are proven to make you live longer. So eat up! Delicious and crunchy, who doesn't love nuts? Monsters, that's who. From the most common, popular nuts to the lesser known specialty nuts, this is a list of all nuts for you to vote on, add to, or re-rank your own version.",
+      "date": "11/14/2018",
+      "userId": "zac",
+      "id": 13
     }
   ],
   "tasks": [
@@ -114,7 +245,7 @@
       "completed": false
     },
     {
-      "task": "Catch up on daily journals utilizing all this new knowledge from the Nutshell Project",
+      "task": "Catch up on daily journals utilizing the knowledge gained from the Nutshell Project",
       "date": "11/16/2018",
       "userId": "dillonWilliams",
       "id": 2,
@@ -160,38 +291,59 @@
       "date": "11/20/2018",
       "completed": false,
       "userId": "Robby",
-      "id": 7
+      "id": 8
     },
     {
       "task": "Feed Dogs",
       "date": "11/14/2018",
       "completed": false,
       "userId": "ousama",
-      "id": 8
+      "id": 9
+    },
+    {
+      "task": "Drink 8 cups of tea",
+      "date": "11/17/2018",
+      "completed": false,
+      "userId": "Robby",
+      "id": 10
+    },
+    {
+      "task": "Check local Wifi for hackers",
+      "date": "11/21/2018",
+      "completed": false,
+      "userId": "ousama",
+      "id": 11
+    },
+    {
+      "task": "Lead the team to victory!",
+      "date": "11/15/2018",
+      "completed": false,
+      "userId": "zac",
+      "id": 12
+    },
+    {
+      "task": "Watch the Alabama Game",
+      "date": "11/17/2018",
+      "completed": false,
+      "userId": "zac",
+      "id": 13
+    },
+    {
+      "task": "testing123",
+      "date": "11/30/2018",
+      "completed": false,
+      "userId": "dillonWilliams",
+      "id": 14
     }
   ],
   "events": [
-    {
-      "name": "Sublime",
-      "date": "2018-11-30",
-      "time": "04:20",
-      "location": "Starwood Amphitheatre",
-      "id": 2
-    },
-    {
-      "name": "Bruce Willis From Home",
-      "date": "2018-11-29",
-      "time": "16:05",
-      "location": "prison",
-      "id": 3
-    },
     {
       "name": "Cowboys @ Falcons",
       "date": "2018-11-18",
       "time": "12:00",
       "location": "Atlanta, Georgia",
       "userId": "dillonWilliams",
-      "id": 4
+      "id": 1
     },
     {
       "name": "In-Laws Thanksgiving",
@@ -199,7 +351,7 @@
       "time": "16:00",
       "location": "Mount Juliet, TN",
       "userId": "dillonWilliams",
-      "id": 5
+      "id": 2
     },
     {
       "name": "My Family's Thanksgiving",
@@ -207,7 +359,7 @@
       "time": "18:00",
       "location": "Lawrenceburg, TN",
       "userId": "dillonWilliams",
-      "id": 6
+      "id": 3
     },
     {
       "name": "Go Home",
@@ -215,7 +367,7 @@
       "time": "23:00",
       "location": "Home",
       "userId": "ousama",
-      "id": 7
+      "id": 4
     },
     {
       "name": "Go to Class",
@@ -223,15 +375,71 @@
       "time": "08:30",
       "location": "NSS",
       "userId": "ousama",
+      "id": 5
+    },
+    {
+      "name": "Music with Robby",
+      "date": "2018-11-18",
+      "time": "18:00",
+      "location": "Mercy Lounge",
+      "userId": "Robby",
+      "id": 6
+    },
+    {
+      "name": "Afternoon Tea",
+      "date": "2018-11-20",
+      "time": "14:00",
+      "location": "Centennial Park",
+      "userId": "Robby",
+      "id": 7
+    },
+    {
+      "name": "How to maximize the impact of your Giphys",
+      "date": "2018-11-17",
+      "time": "08:00",
+      "location": "Online Seminar",
+      "userId": "kazathur92",
       "id": 8
     },
     {
-      "name": "Boyz II Men",
-      "date": "2018-11-30",
-      "time": "04:02",
-      "location": "Cafe Coco",
-      "userId": "Robby",
+      "name": "GGGoA: Giphy Gods of America",
+      "date": "2018-11-20",
+      "time": "22:00",
+      "location": "Salt Lake City, Utah",
+      "userId": "kazathur92",
       "id": 9
+    },
+    {
+      "name": "Giphyholics Anonymous",
+      "date": "2018-11-23",
+      "time": "19:00",
+      "location": "Giphy Gardens Rehab Center",
+      "userId": "kazathur92",
+      "id": 10
+    },
+    {
+      "name": "SEC Championship Game",
+      "date": "2018-12-01",
+      "time": "15:00",
+      "location": "Mercedes Benz Stadium- Atlanta, GA",
+      "userId": "zac",
+      "id": 11
+    },
+    {
+      "name": "PyNash: Civic Engagment with Data Science",
+      "date": "2018-11-29",
+      "time": "18:00",
+      "location": "Emma Bistro- Nashville, TN",
+      "userId": "zac",
+      "id": 12
+    },
+    {
+      "name": "Alabama Fans of Nashville",
+      "date": "2018-12-02",
+      "time": "08:00",
+      "location": "Jonathan's Grille- Nashville, TN",
+      "userId": "zac",
+      "id": 13
     }
   ]
 }

@@ -78,6 +78,7 @@ export default class Tasks {
         }
         let hiddenSelector2 = {
             "element_type": "input",
+            "text_content": "Press ENTER to save",
             "attributes_descriptions": [{
                     "attribute_name": "type",
                     "attribute_value": "text"
@@ -92,7 +93,7 @@ export default class Tasks {
                 },
                 {
                     "attribute_name": "placeholder",
-                    "attribute_value": "Rename your task [press enter to save]"
+                    "attribute_value": "Rename your task"
                 }
             ]
         }
@@ -102,7 +103,7 @@ export default class Tasks {
         let taskParagraph = ElementBuilder.buildHTMLElement(paragraphDefinition.element_type, paragraphDefinition.attribute_descriptions, paragraphDefinition.text_content)
         let checkButton = ElementBuilder.buildHTMLElement(checkboxDefinition.element_type, checkboxDefinition.attribute_descriptions)
         let tasksStatusUpdater = ElementBuilder.buildHTMLElement(hiddenSelector.element_type, hiddenSelector.attributes_descriptions)
-        let taskNameEditor = ElementBuilder.buildHTMLElement(hiddenSelector2.element_type, hiddenSelector2.attributes_descriptions)
+        let taskNameEditor = ElementBuilder.buildHTMLElement(hiddenSelector2.element_type, hiddenSelector2.attributes_descriptions, hiddenSelector2.text_content)
 
         taskDiv.appendChild(taskHeader)
         taskDiv.appendChild(taskParagraph)
